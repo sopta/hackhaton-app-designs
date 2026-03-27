@@ -276,25 +276,20 @@ body {
 
 .nav-btn-next:hover:not(:disabled) { opacity: 0.9; }
 
-/* ===== CODE BLOCKS ===== */
+/* ===== CODE BLOCKS (Prism.js) ===== */
+.step pre[class*="language-"],
 .step pre {
-  background: #2C2520; color: #E8DFD5;
-  padding: 20px 24px; border-radius: var(--g-radius);
-  overflow-x: auto; margin-bottom: 20px;
+  border-radius: var(--g-radius);
+  margin-bottom: 20px;
   border: 1px solid #3D3530;
 }
 
 .step pre code {
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px; line-height: 1.7;
-  background: none; padding: 0; color: inherit;
 }
 
-.step pre code strong {
-  color: #D4A76A; font-weight: 700;
-}
-
-.step code {
+.step code:not([class*="language-"]) {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   background: var(--g-accent-light); color: var(--g-accent);
@@ -366,7 +361,7 @@ body {
 }
 
 .copy-class.copied::after {
-  content: 'Zkopirovano!';
+  content: 'Zkopírováno!';
   position: absolute; top: -28px; right: 0;
   background: var(--g-green); color: #FFFFFF;
   font-size: 10px; font-weight: 600;

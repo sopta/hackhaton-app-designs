@@ -1,7 +1,7 @@
 /**
  * Debug Divas — Guide
- * - Zobrazuje jen aktualni krok
- * - Tlacitko "Hotovo" = oznaci krok jako dokonceny a posune dal
+ * - Zobrazuje jen aktuální krok
+ * - Tlačítko "Hotovo" = označí krok jako dokončený a posune dál
  * - Sidebar navigace s progress
  * - Copy-to-clipboard
  */
@@ -11,6 +11,7 @@ const STEP_KEY = 'debugdivas-guide-current';
 
 let currentStep = 0;
 let steps = [];
+let debugMode = false;
 
 // === STORAGE ===
 
@@ -47,7 +48,7 @@ function updateProgressBar() {
   const bar = document.getElementById('progressBar');
   const label = document.getElementById('progressLabel');
   if (bar) bar.style.width = pct + '%';
-  if (label) label.textContent = done + ' / ' + steps.length + ' kroku hotovo';
+  if (label) label.textContent = done + ' / ' + steps.length + ' kroků hotovo';
 }
 
 // === SIDEBAR ===
@@ -62,7 +63,7 @@ function updateSidebar() {
     const isDone = !!progress[String(i)];
     link.classList.toggle('active', i === currentStep);
     li.classList.toggle('done', isDone);
-    li.classList.toggle('locked', i > maxUnlocked);
+    li.classList.toggle('locked', i > maxUnlocked && !debugMode);
   });
 }
 
@@ -103,14 +104,14 @@ function addNavButtons(index) {
   const nav = document.createElement('div');
   nav.className = 'step-nav';
 
-  // Zpet
+  // Zpět
   const prevBtn = document.createElement('button');
   prevBtn.className = 'nav-btn nav-btn-prev';
-  prevBtn.textContent = 'Zpet';
+  prevBtn.textContent = 'Zpět';
   prevBtn.disabled = index === 0;
   prevBtn.addEventListener('click', () => showStep(index - 1));
 
-  // Hotovo / Dokonceno
+  // Hotovo / Dokončeno
   const doneBtn = document.createElement('button');
   doneBtn.className = 'nav-btn nav-btn-next';
 
@@ -119,7 +120,7 @@ function addNavButtons(index) {
   const alreadyDone = !!progress[String(index)];
 
   if (isLastStep) {
-    doneBtn.textContent = alreadyDone ? 'Vse dokonceno!' : 'Dokoncit pruvodce';
+    doneBtn.textContent = alreadyDone ? 'Vše dokončeno!' : 'Dokončit průvodce';
     doneBtn.disabled = alreadyDone;
     doneBtn.addEventListener('click', () => {
       markDone(index);
@@ -127,7 +128,7 @@ function addNavButtons(index) {
       showStep(index); // refresh buttons
     });
   } else {
-    doneBtn.textContent = 'Hotovo, dalsi krok';
+    doneBtn.textContent = 'Hotovo, další krok';
     doneBtn.addEventListener('click', () => {
       markDone(index);
       steps[index].classList.add('completed');
@@ -144,7 +145,7 @@ function addNavButtons(index) {
 
 function initCopyButtons() {
   document.querySelectorAll('.copy-class').forEach(el => {
-    el.title = 'Klikni pro zkopirovani';
+    el.title = 'Klikni pro zkopírování';
     el.addEventListener('click', () => {
       const text = el.dataset.class || el.textContent;
       navigator.clipboard.writeText(text).then(() => {
@@ -176,7 +177,7 @@ function initKeyboard() {
       e.preventDefault();
       if (currentStep < steps.length - 1) {
         const maxUnlocked = getMaxUnlocked();
-        if (currentStep + 1 <= maxUnlocked) showStep(currentStep + 1);
+        if (debugMode || currentStep + 1 <= maxUnlocked) showStep(currentStep + 1);
       }
     } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
       e.preventDefault();
@@ -184,6 +185,24 @@ function initKeyboard() {
     }
   });
 }
+
+// === DEBUG & RESET (console only) ===
+
+window.toggleDebug = function () {
+  debugMode = !debugMode;
+  console.log('%cDEBUG MODE: ' + (debugMode ? 'ON' : 'OFF'),
+    'color:' + (debugMode ? '#6B8F71' : '#8A7D72') + ';font-weight:bold');
+  updateSidebar();
+};
+
+window.resetGuide = function () {
+  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(STEP_KEY);
+  steps.forEach(s => s.classList.remove('completed'));
+  updateProgressBar();
+  showStep(0);
+  console.log('%cGuide reset!', 'color:#A67C52;font-weight:bold');
+};
 
 // === INIT ===
 
