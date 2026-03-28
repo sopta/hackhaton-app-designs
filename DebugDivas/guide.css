@@ -151,6 +151,30 @@ body {
 
 .step-list li.done .nav-num span { display: none; }
 
+/* Step group titles */
+.step-group-title {
+  padding: 14px 20px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--g-accent);
+  list-style: none;
+  transition: opacity 0.2s;
+}
+
+.step-group-title:first-child {
+  padding-top: 8px;
+}
+
+.step-group-title.locked {
+  opacity: 0.35;
+}
+
+.step-group-title.group-complete {
+  color: var(--g-green);
+}
+
 /* ===== MAIN LAYOUT ===== */
 .main-wrap {
   margin-left: var(--sidebar-width);

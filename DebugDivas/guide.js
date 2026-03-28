@@ -1,13 +1,24 @@
 /**
  * Debug Divas — Guide
- * - Zobrazuje jen aktuální krok
- * - Tlačítko "Hotovo" = označí krok jako dokončený a posune dál
- * - Sidebar navigace s progress
- * - Copy-to-clipboard
+ * - Kroky seskupené podle sekcí stránky
+ * - Příprava + Meet the Team = povinné (sekvenční)
+ * - Po dokončení Meet the Team se odemknou všechny zbylé sekce
+ * - V rámci sekce: kroky sekvenční
  */
 
 const STORAGE_KEY = 'debugdivas-guide-progress';
 const STEP_KEY = 'debugdivas-guide-current';
+
+// Skupiny kroků — indices odkazují na pořadí .step elementů v DOM (0-based)
+const GROUPS = [
+  { name: 'Příprava projektu', steps: [0],              required: true },
+  { name: 'Meet the Team',     steps: [1, 2, 3, 4, 5],  required: true },
+  { name: 'Sprint Board',      steps: [6, 7, 8],         required: false },
+  { name: 'Dictionary',        steps: [9, 10],            required: false },
+  { name: 'Footer',            steps: [11],               required: false },
+  { name: 'Hero',              steps: [12],               required: false },
+  { name: 'Dokončení',         steps: [13],               required: false },
+];
 
 let currentStep = 0;
 let steps = [];
@@ -51,31 +62,83 @@ function updateProgressBar() {
   if (label) label.textContent = done + ' / ' + steps.length + ' kroků hotovo';
 }
 
+// === UNLOCKING LOGIC ===
+
+function isGroupComplete(group) {
+  const progress = loadProgress();
+  return group.steps.every(i => !!progress[String(i)]);
+}
+
+function areRequiredGroupsDone() {
+  return GROUPS.filter(g => g.required).every(g => isGroupComplete(g));
+}
+
+function getUnlockedSteps() {
+  const progress = loadProgress();
+  const unlocked = new Set();
+
+  for (const group of GROUPS) {
+    // Check if this group is accessible
+    let groupAccessible = false;
+
+    if (group.required) {
+      // Required groups: accessible if all previous required groups are complete
+      const prevRequired = GROUPS.filter(g => g.required && GROUPS.indexOf(g) < GROUPS.indexOf(group));
+      groupAccessible = prevRequired.every(g => isGroupComplete(g));
+    } else {
+      // Optional groups: accessible only after all required groups are done
+      groupAccessible = areRequiredGroupsDone();
+    }
+
+    if (!groupAccessible) continue;
+
+    // Within accessible group: sequential unlocking
+    for (const stepIdx of group.steps) {
+      unlocked.add(stepIdx);
+      if (!progress[String(stepIdx)]) break; // stop at first incomplete
+    }
+  }
+
+  return unlocked;
+}
+
+function isStepUnlocked(index) {
+  if (debugMode) return true;
+  return getUnlockedSteps().has(index);
+}
+
 // === SIDEBAR ===
 
 function updateSidebar() {
   const progress = loadProgress();
-  const items = document.querySelectorAll('#stepList li');
-  const maxUnlocked = getMaxUnlocked();
+  const unlocked = debugMode ? null : getUnlockedSteps();
 
-  items.forEach((li, i) => {
+  // Update step items
+  const items = document.querySelectorAll('#stepList li[data-step-index]');
+  items.forEach(li => {
+    const i = parseInt(li.dataset.stepIndex);
     const link = li.querySelector('a');
     const isDone = !!progress[String(i)];
+    const isLocked = !debugMode && !unlocked.has(i);
+
     link.classList.toggle('active', i === currentStep);
     li.classList.toggle('done', isDone);
-    li.classList.toggle('locked', i > maxUnlocked && !debugMode);
+    li.classList.toggle('locked', isLocked);
   });
-}
 
-function getMaxUnlocked() {
-  const progress = loadProgress();
-  let max = 0;
-  for (let i = 0; i < steps.length; i++) {
-    if (progress[String(i)]) {
-      max = Math.max(max, i + 1);
+  // Update group titles
+  document.querySelectorAll('#stepList .step-group-title').forEach(title => {
+    const groupIdx = parseInt(title.dataset.groupIndex);
+    const group = GROUPS[groupIdx];
+    if (!group) return;
+
+    let groupLocked = false;
+    if (!debugMode) {
+      groupLocked = !group.steps.some(i => unlocked.has(i));
     }
-  }
-  return Math.max(max, currentStep);
+    title.classList.toggle('locked', groupLocked);
+    title.classList.toggle('group-complete', isGroupComplete(group));
+  });
 }
 
 // === SHOW STEP ===
@@ -94,6 +157,10 @@ function showStep(index) {
 }
 
 // === NAV BUTTONS ===
+
+function findGroupForStep(index) {
+  return GROUPS.find(g => g.steps.includes(index));
+}
 
 function addNavButtons(index) {
   steps.forEach(s => {
@@ -119,13 +186,31 @@ function addNavButtons(index) {
   const progress = loadProgress();
   const alreadyDone = !!progress[String(index)];
 
+  const group = findGroupForStep(index);
+  const isLastInGroup = group && index === group.steps[group.steps.length - 1];
+
   if (isLastStep) {
     doneBtn.textContent = alreadyDone ? 'Vše dokončeno!' : 'Dokončit průvodce';
     doneBtn.disabled = alreadyDone;
     doneBtn.addEventListener('click', () => {
       markDone(index);
       steps[index].classList.add('completed');
-      showStep(index); // refresh buttons
+      showStep(index);
+    });
+  } else if (isLastInGroup) {
+    // Last step in group — mark done, go to first step of next group
+    doneBtn.textContent = alreadyDone ? 'Sekce dokončena ✓' : 'Dokončit sekci';
+    doneBtn.disabled = alreadyDone;
+    doneBtn.addEventListener('click', () => {
+      markDone(index);
+      steps[index].classList.add('completed');
+      const groupIdx = GROUPS.indexOf(group);
+      const nextGroup = GROUPS[groupIdx + 1];
+      if (nextGroup) {
+        showStep(nextGroup.steps[0]);
+      } else {
+        showStep(index);
+      }
     });
   } else {
     doneBtn.textContent = 'Hotovo, další krok';
@@ -159,12 +244,13 @@ function initCopyButtons() {
 // === SIDEBAR CLICK ===
 
 function initSidebar() {
-  document.querySelectorAll('#stepList a').forEach((link, i) => {
+  document.querySelectorAll('#stepList li[data-step-index] a').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const li = link.closest('li');
       if (li.classList.contains('locked')) return;
-      showStep(i);
+      const idx = parseInt(li.dataset.stepIndex);
+      showStep(idx);
     });
   });
 }
@@ -176,8 +262,7 @@ function initKeyboard() {
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
       e.preventDefault();
       if (currentStep < steps.length - 1) {
-        const maxUnlocked = getMaxUnlocked();
-        if (debugMode || currentStep + 1 <= maxUnlocked) showStep(currentStep + 1);
+        if (isStepUnlocked(currentStep + 1)) showStep(currentStep + 1);
       }
     } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
       e.preventDefault();

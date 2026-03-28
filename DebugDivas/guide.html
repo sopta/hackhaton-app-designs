@@ -26,22 +26,44 @@
       <div class="progress-wrap">
         <div class="progress-bar" id="progressBar"></div>
       </div>
-      <span class="progress-label" id="progressLabel">0 / 13 kroků hotovo</span>
+      <span class="progress-label" id="progressLabel">0 / 14 kroků hotovo</span>
     </div>
     <ol class="step-list" id="stepList">
-      <li><a href="#step-0" data-step="0"><span class="nav-num"><span>1</span></span> Příprava projektu</a></li>
-      <li><a href="#step-1" data-step="1"><span class="nav-num"><span>2</span></span> Barvy pozadí</a></li>
-      <li><a href="#step-2" data-step="2"><span class="nav-num"><span>3</span></span> Typografie</a></li>
-      <li><a href="#step-3" data-step="3"><span class="nav-num"><span>4</span></span> Layout sekcí</a></li>
-      <li><a href="#step-4" data-step="4"><span class="nav-num"><span>5</span></span> Team karty</a></li>
-      <li><a href="#step-5" data-step="5"><span class="nav-num"><span>6</span></span> Vizuál karet</a></li>
-      <li><a href="#step-6" data-step="6"><span class="nav-num"><span>7</span></span> Tlačítka</a></li>
-      <li><a href="#step-7" data-step="7"><span class="nav-num"><span>8</span></span> Sprint sloupce</a></li>
-      <li><a href="#step-8" data-step="8"><span class="nav-num"><span>9</span></span> Task karty</a></li>
-      <li><a href="#step-9" data-step="9"><span class="nav-num"><span>10</span></span> Dictionary grid</a></li>
-      <li><a href="#step-10" data-step="10"><span class="nav-num"><span>11</span></span> Footer</a></li>
-      <li><a href="#step-11" data-step="11"><span class="nav-num"><span>12</span></span> Hero obrázek</a></li>
-      <li><a href="#step-12" data-step="12"><span class="nav-num"><span>13</span></span> Max-width</a></li>
+      <!-- Příprava projektu -->
+      <li class="step-group-title" data-group-index="0">Příprava projektu</li>
+      <li data-step-index="0"><a href="#step-0"><span class="nav-num"><span>1</span></span> Propojení stylů a fontů</a>
+      </li>
+
+      <!-- Meet the Team -->
+      <li class="step-group-title" data-group-index="1">Meet the Team</li>
+      <li data-step-index="1"><a href="#step-1"><span class="nav-num"><span>1</span></span> Pozadí sekce</a></li>
+      <li data-step-index="2"><a href="#step-2"><span class="nav-num"><span>2</span></span> Typografie</a></li>
+      <li data-step-index="3"><a href="#step-3"><span class="nav-num"><span>3</span></span> Karty vedle sebe</a></li>
+      <li data-step-index="4"><a href="#step-4"><span class="nav-num"><span>4</span></span> Vizuál karet</a></li>
+      <li data-step-index="5"><a href="#step-5"><span class="nav-num"><span>5</span></span> Tlačítka</a></li>
+
+      <!-- Sprint Board -->
+      <li class="step-group-title" data-group-index="2">Sprint Board</li>
+      <li data-step-index="6"><a href="#step-6"><span class="nav-num"><span>1</span></span> Pozadí a nadpis</a></li>
+      <li data-step-index="7"><a href="#step-7"><span class="nav-num"><span>2</span></span> Sloupce</a></li>
+      <li data-step-index="8"><a href="#step-8"><span class="nav-num"><span>3</span></span> Task karty</a></li>
+
+      <!-- Dictionary -->
+      <li class="step-group-title" data-group-index="3">Dictionary</li>
+      <li data-step-index="9"><a href="#step-9"><span class="nav-num"><span>1</span></span> Pozadí a typografie</a></li>
+      <li data-step-index="10"><a href="#step-10"><span class="nav-num"><span>2</span></span> Grid a karty</a></li>
+
+      <!-- Footer -->
+      <li class="step-group-title" data-group-index="4">Footer</li>
+      <li data-step-index="11"><a href="#step-11"><span class="nav-num"><span>1</span></span> Patička</a></li>
+
+      <!-- Hero -->
+      <li class="step-group-title" data-group-index="5">Hero</li>
+      <li data-step-index="12"><a href="#step-12"><span class="nav-num"><span>1</span></span> Hero obrázek</a></li>
+
+      <!-- Dokončení -->
+      <li class="step-group-title" data-group-index="6">Dokončení</li>
+      <li data-step-index="13"><a href="#step-13"><span class="nav-num"><span>1</span></span> Max-width</a></li>
     </ol>
   </aside>
 
@@ -49,11 +71,13 @@
   <div class="main-wrap">
     <main class="content">
 
+      <!-- ==================== PŘÍPRAVA PROJEKTU ==================== -->
+
       <!-- STEP 0 -->
       <section class="step" id="step-0">
         <div class="step-header">
           <div class="step-number">1</div>
-          <h2>Příprava projektu</h2>
+          <h2>Propojení stylů a fontů</h2>
         </div>
         <p>Než začneme, propojíme HTML se styly a fonty.</p>
 
@@ -70,8 +94,8 @@
         <pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700;800&amp;family=Montserrat:wght@400;500;600;700&amp;family=Sora:wght@400;600;700&amp;family=Space+Mono&amp;display=swap" rel="stylesheet"&gt;</code></pre>
 
         <div class="task-box">
-          <h3>3. Přidejte ikony (Lucide)</h3>
-          <p>Přidejte před <code>&lt;/body&gt;</code>:</p>
+          <h3>3. Přidejte ikony</h3>
+          <p>Přidejte před element <code>&lt;/body&gt;</code>:</p>
         </div>
         <pre><code class="language-html">&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;
 &lt;script&gt;lucide.createIcons();&lt;/script&gt;</code></pre>
@@ -82,118 +106,67 @@
         </div>
       </section>
 
+      <!-- ==================== MEET THE TEAM ==================== -->
+
       <!-- STEP 1 -->
       <section class="step" id="step-1">
         <div class="step-header">
-          <div class="step-number">2</div>
-          <h2>Barvy pozadí sekcí</h2>
+          <div class="step-number">1</div>
+          <h2>Pozadí sekce</h2>
         </div>
-        <p>Přidáme každému <code>&lt;section&gt;</code> třídu, která mu nastaví barvu pozadí. Střídáme tmavou a střední.
-        </p>
+        <p>Přidáme třídu na sekci <strong>Meet the Team</strong>, která jí nastaví barvu pozadí.</p>
 
         <div class="color-palette">
-          <div class="color-swatch" style="background:#0F1923"><span>#0F1923</span><span>tmavá</span></div>
-          <div class="color-swatch" style="background:#1C2A43"><span>#1C2A43</span><span>střední</span></div>
+          <div class="color-swatch" style="background:#1C2A43"><span>#1C2A43</span></div>
         </div>
 
-        <div class="task-box">
-          <h3>Přidejte třídy na sekce</h3>
-          <p>Najděte v HTML každý <code>&lt;section&gt;</code> a přidejte mu třídu:</p>
+        <div class="class-list">
+          <h3>Třída k přidání</h3>
+          <table>
+            <tr>
+              <td>Team sekce</td>
+              <td><code class="copy-class" data-class="team-section">team-section</code></td>
+            </tr>
+          </table>
         </div>
 
         <div class="before-after">
           <div class="ba-col">
             <span class="ba-label ba-before">Před</span>
             <pre><code class="language-html">&lt;section&gt;
-  &lt;!-- Hero --&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;!-- Team --&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;!-- Sprint --&gt;
-&lt;/section&gt;</code></pre>
+  &lt;span&gt;MEET THE TEAM&lt;/span&gt;
+  ...</code></pre>
           </div>
           <div class="ba-col">
             <span class="ba-label ba-after">Po</span>
-            <pre><code class="language-html">&lt;section class="hero"&gt;
-  &lt;!-- Hero --&gt;
-&lt;/section&gt;
-
-&lt;section class="team-section"&gt;
-  &lt;!-- Team --&gt;
-&lt;/section&gt;
-
-&lt;section class="sprint-section"&gt;
-  &lt;!-- Sprint --&gt;
-&lt;/section&gt;</code></pre>
+            <pre><code class="language-html">&lt;section class="team-section"&gt;
+  &lt;span&gt;MEET THE TEAM&lt;/span&gt;
+  ...</code></pre>
           </div>
         </div>
 
-        <div class="class-list">
-          <h3>Všechny třídy k přidání</h3>
-          <table>
-            <tr>
-              <td>Hero sekce</td>
-              <td><code class="copy-class" data-class="hero">hero</code></td>
-            </tr>
-            <tr>
-              <td>Team sekce</td>
-              <td><code class="copy-class" data-class="team-section">team-section</code></td>
-            </tr>
-            <tr>
-              <td>Sprint sekce</td>
-              <td><code class="copy-class" data-class="sprint-section">sprint-section</code></td>
-            </tr>
-            <tr>
-              <td>Dictionary sekce</td>
-              <td><code class="copy-class" data-class="dictionary-section">dictionary-section</code></td>
-            </tr>
-            <tr>
-              <td>Footer</td>
-              <td><code class="copy-class" data-class="footer">footer</code></td>
-            </tr>
-          </table>
-        </div>
-
         <div class="tip-box">
-          <strong>Co se děje?</strong> Soubor <code>style.css</code> už obsahuje pravidlo např.
+          <strong>Co se děje?</strong> Soubor <code>style.css</code> už obsahuje pravidlo
           <code>.team-section { background: #1C2A43; }</code>. Když přidáme třídu na element, prohlížeč aplikuje
           odpovídající styl.
         </div>
 
         <div class="checkpoint">
-          <strong>Kontrola:</strong> Každá sekce by měla mít mírně odlišný odstín tmavé modré. Hero, Sprint a Footer
-          jsou tmavší.
+          <strong>Kontrola:</strong> Sekce Meet the Team má tmavě modré pozadí.
         </div>
       </section>
 
       <!-- STEP 2 -->
       <section class="step" id="step-2">
         <div class="step-header">
-          <div class="step-number">3</div>
+          <div class="step-number">2</div>
           <h2>Typografie</h2>
         </div>
         <p>Přidáme třídy na textové elementy — nadpisy, labely a popisky dostanou správné fonty a barvy.</p>
 
-        <div class="task-box">
-          <h3>Team sekce — přidejte třídy na texty</h3>
-        </div>
-
-        <div class="before-after">
-          <div class="ba-col">
-            <span class="ba-label ba-before">Před</span>
-            <pre><code class="language-html">&lt;span&gt;MEET THE TEAM&lt;/span&gt;
-&lt;h2&gt;The minds behind...&lt;/h2&gt;</code></pre>
-          </div>
-          <div class="ba-col">
-            <span class="ba-label ba-after">Po</span>
-            <pre><code class="language-html">&lt;span class="team-label"&gt;MEET THE TEAM&lt;/span&gt;
-&lt;h2 class="team-subtitle"&gt;The minds behind...&lt;/h2&gt;</code></pre>
-          </div>
-        </div>
+        <!-- <div class="task-box">
+          <h3>Přidejte třídy na texty</h3>
+        </div> -->
 
         <div class="class-list">
           <h3>Všechny třídy k přidání</h3>
@@ -218,27 +191,20 @@
               <td>Popis na kartě</td>
               <td><code class="copy-class" data-class="team-desc">team-desc</code></td>
             </tr>
-            <tr>
-              <td>"SPRINT BOARD"</td>
-              <td><code class="copy-class" data-class="sprint-title">sprint-title</code></td>
-            </tr>
-            <tr>
-              <td>Dictionary nadpis</td>
-              <td><code class="copy-class" data-class="dict-title">dict-title</code></td>
-            </tr>
-            <tr>
-              <td>Dictionary podnadpis</td>
-              <td><code class="copy-class" data-class="dict-subtitle">dict-subtitle</code></td>
-            </tr>
-            <tr>
-              <td>Footer logo text</td>
-              <td><code class="copy-class" data-class="footer-logo-text">footer-logo-text</code></td>
-            </tr>
-            <tr>
-              <td>Copyright</td>
-              <td><code class="copy-class" data-class="copyright">copyright</code></td>
-            </tr>
           </table>
+        </div>
+
+        <div class="before-after">
+          <div class="ba-col">
+            <span class="ba-label ba-before">Před</span>
+            <pre><code class="language-html">&lt;span&gt;MEET THE TEAM&lt;/span&gt;
+&lt;h2&gt;The minds behind...&lt;/h2&gt;</code></pre>
+          </div>
+          <div class="ba-col">
+            <span class="ba-label ba-after">Po</span>
+            <pre><code class="language-html">&lt;span class="team-label"&gt;MEET THE TEAM&lt;/span&gt;
+&lt;h2 class="team-subtitle"&gt;The minds behind...&lt;/h2&gt;</code></pre>
+          </div>
         </div>
 
         <div class="tip-box">
@@ -247,53 +213,39 @@
         </div>
 
         <div class="checkpoint">
-          <strong>Kontrola:</strong> Texty by měly mít různé velikosti a fonty. Label "MEET THE TEAM" je malý a cyan,
-          nadpisy velké a bílé.
+          <strong>Kontrola:</strong> Label "MEET THE TEAM" je malý a cyan, nadpis velký a bílý. Jména a role na kartách
+          mají správné fonty.
         </div>
       </section>
 
       <!-- STEP 3 -->
       <section class="step" id="step-3">
         <div class="step-header">
-          <div class="step-number">4</div>
-          <h2>Layout sekcí</h2>
-        </div>
-        <p>Třídy, které jsme přidali v kroku 1, už obsahují i Flexbox layout — obsah se zarovnal a dostal odsazení. Ale
-          některé vnitřní kontejnery ještě potřebují vlastní třídu.</p>
-
-        <div class="info-box">
-          <h3>Co je Flexbox?</h3>
-          <p>Nástroj pro řazení prvků. Hlavní myšlenky:</p>
-          <ul>
-            <li><code>flex-direction: column</code> = prvky pod sebou</li>
-            <li><code>align-items: center</code> = centrování</li>
-            <li><code>gap</code> = mezera mezi prvky</li>
-            <li><code>padding</code> = vnitřní odsazení od okraje</li>
-          </ul>
-        </div>
-
-        <div class="task-box">
-          <h3>Ověření</h3>
-          <p>Pokud jste správně přidali třídy v kroku 1 (<code>team-section</code>, <code>sprint-section</code> atd.),
-            sekce by už měly mít padding a centrování. Pokud ne, vraťte se ke kroku 1.</p>
-        </div>
-
-        <div class="checkpoint">
-          <strong>Kontrola:</strong> Obsah sekcí je vycentrovaný s odsazením od okrajů. Prvky mají mezery díky
-          <code>gap</code>.
-        </div>
-      </section>
-
-      <!-- STEP 4 -->
-      <section class="step" id="step-4">
-        <div class="step-header">
-          <div class="step-number">5</div>
-          <h2>Team karty vedle sebe</h2>
+          <div class="step-number">3</div>
+          <h2>Karty vedle sebe</h2>
         </div>
         <p>Karty členů týmu jsou pod sebou. Přidáme třídu na jejich kontejner, aby se zobrazily vedle sebe.</p>
 
-        <div class="task-box">
+        <!-- <div class="task-box">
           <h3>Přidejte třídy</h3>
+        </div> -->
+
+        <div class="class-list">
+          <h3>Třídy k přidání</h3>
+          <table>
+            <tr>
+              <td>Kontejner všech karet</td>
+              <td><code class="copy-class" data-class="team-cards">team-cards</code></td>
+            </tr>
+            <tr>
+              <td>Každá karta (5x)</td>
+              <td><code class="copy-class" data-class="team-card">team-card</code></td>
+            </tr>
+            <tr>
+              <td>Řádek s tlačítky</td>
+              <td><code class="copy-class" data-class="cta-row">cta-row</code></td>
+            </tr>
+          </table>
         </div>
 
         <div class="before-after">
@@ -317,22 +269,14 @@
           </div>
         </div>
 
-        <div class="class-list">
-          <h3>Třídy k přidání</h3>
-          <table>
-            <tr>
-              <td>Kontejner všech karet</td>
-              <td><code class="copy-class" data-class="team-cards">team-cards</code></td>
-            </tr>
-            <tr>
-              <td>Každá karta (5x)</td>
-              <td><code class="copy-class" data-class="team-card">team-card</code></td>
-            </tr>
-            <tr>
-              <td>Řádek s tlačítky</td>
-              <td><code class="copy-class" data-class="cta-row">cta-row</code></td>
-            </tr>
-          </table>
+        <div class="info-box">
+          <h3>Co je Flexbox?</h3>
+          <p>Nástroj pro řazení prvků. Hlavní myšlenky:</p>
+          <ul>
+            <li><code>flex-direction: row</code> = prvky vedle sebe</li>
+            <li><code>flex: 1</code> = každý prvek zabere rovnoměrný díl</li>
+            <li><code>gap</code> = mezera mezi prvky</li>
+          </ul>
         </div>
 
         <div class="tip-box">
@@ -346,10 +290,10 @@
         </div>
       </section>
 
-      <!-- STEP 5 -->
-      <section class="step" id="step-5">
+      <!-- STEP 4 -->
+      <section class="step" id="step-4">
         <div class="step-header">
-          <div class="step-number">6</div>
+          <div class="step-number">4</div>
           <h2>Vizuál karet</h2>
         </div>
         <p>Třída <code>team-card</code> z předchozího kroku už obsahuje i vizuální styl — pozadí, rámeček a glow stín.
@@ -374,30 +318,17 @@
         </div>
       </section>
 
-      <!-- STEP 6 -->
-      <section class="step" id="step-6">
+      <!-- STEP 5 -->
+      <section class="step" id="step-5">
         <div class="step-header">
-          <div class="step-number">7</div>
+          <div class="step-number">5</div>
           <h2>Tlačítka</h2>
         </div>
         <p>Dva odkazy pod kartami změníme na stylová tlačítka — primární (vyplněné) a sekundární (outline).</p>
 
-        <div class="task-box">
+        <!-- <div class="task-box">
           <h3>Přidejte třídy na odkazy</h3>
-        </div>
-
-        <div class="before-after">
-          <div class="ba-col">
-            <span class="ba-label ba-before">Před</span>
-            <pre><code class="language-html">&lt;a href="#"&gt;JOIN THE BUG HUNT&lt;/a&gt;
-&lt;a href="#"&gt;VIEW OUR WORK&lt;/a&gt;</code></pre>
-          </div>
-          <div class="ba-col">
-            <span class="ba-label ba-after">Po</span>
-            <pre><code class="language-html">&lt;a href="#" class="btn-primary"&gt;JOIN...&lt;/a&gt;
-&lt;a href="#" class="btn-secondary"&gt;VIEW...&lt;/a&gt;</code></pre>
-          </div>
-        </div>
+        </div> -->
 
         <div class="class-list">
           <h3>Třídy k přidání</h3>
@@ -413,6 +344,19 @@
           </table>
         </div>
 
+        <div class="before-after">
+          <div class="ba-col">
+            <span class="ba-label ba-before">Před</span>
+            <pre><code class="language-html">&lt;a href="#"&gt;JOIN THE BUG HUNT&lt;/a&gt;
+&lt;a href="#"&gt;VIEW OUR WORK&lt;/a&gt;</code></pre>
+          </div>
+          <div class="ba-col">
+            <span class="ba-label ba-after">Po</span>
+            <pre><code class="language-html">&lt;a href="#" class="btn-primary"&gt;JOIN...&lt;/a&gt;
+&lt;a href="#" class="btn-secondary"&gt;VIEW...&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+
         <div class="tip-box">
           <strong>Primární vs Sekundární?</strong> Primární (vyplněné) = hlavní akce stránky. Sekundární (outline) =
           alternativa. Uživatel intuitivně klikne na výraznější tlačítko.
@@ -420,29 +364,62 @@
 
         <div class="checkpoint">
           <strong>Kontrola:</strong> "JOIN THE BUG HUNT" je tyrkysově vyplněné. "VIEW OUR WORK" má tyrkysový rámeček na
-          průhledném pozadí.
+          průhledném pozadí. Sekce Meet the Team je kompletní!
+        </div>
+      </section>
+
+      <!-- ==================== SPRINT BOARD ==================== -->
+
+      <!-- STEP 6 -->
+      <section class="step" id="step-6">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <h2>Pozadí a nadpis</h2>
+        </div>
+        <p>Přidáme třídy na <strong>Sprint Board</strong> sekci — pozadí, nadpis a akcentovou čáru.</p>
+
+        <!-- <div class="task-box">
+          <h3>Přidejte třídy</h3>
+        </div> -->
+
+        <div class="class-list">
+          <h3>Třídy k přidání</h3>
+          <table>
+            <tr>
+              <td>Sekce</td>
+              <td><code class="copy-class" data-class="sprint-section">sprint-section</code></td>
+            </tr>
+            <tr>
+              <td>Nadpis "SPRINT BOARD"</td>
+              <td><code class="copy-class" data-class="sprint-title">sprint-title</code></td>
+            </tr>
+            <tr>
+              <td>Accent čára pod nadpisem</td>
+              <td><code class="copy-class" data-class="sprint-title-accent">sprint-title-accent</code></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="checkpoint">
+          <strong>Kontrola:</strong> Sprint Board sekce má tmavé pozadí, velký nadpis a barevnou čáru pod ním.
         </div>
       </section>
 
       <!-- STEP 7 -->
       <section class="step" id="step-7">
         <div class="step-header">
-          <div class="step-number">8</div>
-          <h2>Sprint Board sloupce</h2>
+          <div class="step-number">2</div>
+          <h2>Sloupce</h2>
         </div>
         <p>Sprint Board má tři sloupce. Přidáme třídy na kontejner a každý sloupec.</p>
 
-        <div class="task-box">
+        <!-- <div class="task-box">
           <h3>Přidejte třídy</h3>
-        </div>
+        </div> -->
 
         <div class="class-list">
           <h3>Třídy k přidání</h3>
           <table>
-            <tr>
-              <td>Accent čára pod nadpisem</td>
-              <td><code class="copy-class" data-class="sprint-title-accent">sprint-title-accent</code></td>
-            </tr>
             <tr>
               <td>Kontejner sloupců</td>
               <td><code class="copy-class" data-class="sprint-columns">sprint-columns</code></td>
@@ -476,14 +453,14 @@
       <!-- STEP 8 -->
       <section class="step" id="step-8">
         <div class="step-header">
-          <div class="step-number">9</div>
+          <div class="step-number">3</div>
           <h2>Task karty</h2>
         </div>
         <p>Každá task karta uvnitř sloupce potřebuje třídy pro hlavičku, tagy a obsah.</p>
 
-        <div class="task-box">
+        <!-- <div class="task-box">
           <h3>Přidejte třídy na obsah sloupců</h3>
-        </div>
+        </div> -->
 
         <div class="class-list">
           <h3>Hlavička sloupce</h3>
@@ -544,21 +521,59 @@
         </div>
 
         <div class="checkpoint">
-          <strong>Kontrola:</strong> Každý sloupec má barevnou hlavičku a task karty s barevnými tagy.
+          <strong>Kontrola:</strong> Každý sloupec má barevnou hlavičku a task karty s barevnými tagy. Sekce Sprint
+          Board je kompletní!
         </div>
       </section>
+
+      <!-- ==================== DICTIONARY ==================== -->
 
       <!-- STEP 9 -->
       <section class="step" id="step-9">
         <div class="step-header">
-          <div class="step-number">10</div>
-          <h2>Dictionary grid</h2>
+          <div class="step-number">1</div>
+          <h2>Pozadí a typografie</h2>
+        </div>
+        <p>Přidáme třídu na <strong>Dictionary</strong> sekci a na její nadpisy.</p>
+
+        <!-- <div class="task-box">
+          <h3>Přidejte třídy</h3>
+        </div> -->
+
+        <div class="class-list">
+          <h3>Třídy k přidání</h3>
+          <table>
+            <tr>
+              <td>Sekce</td>
+              <td><code class="copy-class" data-class="dictionary-section">dictionary-section</code></td>
+            </tr>
+            <tr>
+              <td>Nadpis</td>
+              <td><code class="copy-class" data-class="dict-title">dict-title</code></td>
+            </tr>
+            <tr>
+              <td>Podnadpis</td>
+              <td><code class="copy-class" data-class="dict-subtitle">dict-subtitle</code></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="checkpoint">
+          <strong>Kontrola:</strong> Dictionary sekce má pozadí a stylované nadpisy.
+        </div>
+      </section>
+
+      <!-- STEP 10 -->
+      <section class="step" id="step-10">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <h2>Grid a karty</h2>
         </div>
         <p>Slovník má 6 karet ve 3 řádcích po 2. Přidáme třídy na grid, řádky i karty.</p>
 
-        <div class="task-box">
+        <!-- <div class="task-box">
           <h3>Přidejte třídy</h3>
-        </div>
+        </div> -->
 
         <div class="class-list">
           <h3>Třídy k přidání</h3>
@@ -605,25 +620,32 @@
         </div>
 
         <div class="checkpoint">
-          <strong>Kontrola:</strong> 6 karet ve 3 řádcích. Každá s barevným nadpisem a šedým popisem.
+          <strong>Kontrola:</strong> 6 karet ve 3 řádcích. Každá s barevným nadpisem a šedým popisem. Sekce Dictionary
+          je kompletní!
         </div>
       </section>
 
-      <!-- STEP 10 -->
-      <section class="step" id="step-10">
+      <!-- ==================== FOOTER ==================== -->
+
+      <!-- STEP 11 -->
+      <section class="step" id="step-11">
         <div class="step-header">
-          <div class="step-number">11</div>
-          <h2>Footer</h2>
+          <div class="step-number">1</div>
+          <h2>Patička</h2>
         </div>
         <p>Footer má gradient čáru, logo a navigaci.</p>
 
-        <div class="task-box">
+        <!-- <div class="task-box">
           <h3>Přidejte třídy</h3>
-        </div>
+        </div> -->
 
         <div class="class-list">
           <h3>Třídy k přidání</h3>
           <table>
+            <tr>
+              <td>Footer element</td>
+              <td><code class="copy-class" data-class="footer">footer</code></td>
+            </tr>
             <tr>
               <td>Gradient čára</td>
               <td><code class="copy-class" data-class="footer-divider">footer-divider</code></td>
@@ -637,8 +659,16 @@
               <td><code class="copy-class" data-class="footer-logo">footer-logo</code></td>
             </tr>
             <tr>
+              <td>Logo text</td>
+              <td><code class="copy-class" data-class="footer-logo-text">footer-logo-text</code></td>
+            </tr>
+            <tr>
               <td>Navigace</td>
               <td><code class="copy-class" data-class="footer-nav">footer-nav</code></td>
+            </tr>
+            <tr>
+              <td>Copyright</td>
+              <td><code class="copy-class" data-class="copyright">copyright</code></td>
             </tr>
           </table>
         </div>
@@ -650,30 +680,50 @@
 
         <div class="checkpoint">
           <strong>Kontrola:</strong> Tyrkysová čára mizející do stran. Pod ní logo vlevo, navigace vpravo, copyright
-          vycentrovaný.
+          vycentrovaný. Sekce Footer je kompletní!
         </div>
       </section>
 
-      <!-- STEP 11 -->
-      <section class="step" id="step-11">
+      <!-- ==================== HERO ==================== -->
+
+      <!-- STEP 12 -->
+      <section class="step" id="step-12">
         <div class="step-header">
-          <div class="step-number">12</div>
+          <div class="step-number">1</div>
           <h2>Hero obrázek</h2>
         </div>
-        <p>Hero sekce zobrazí obrázek týmu. Přidáme třídu na <code>&lt;img&gt;</code>.</p>
+        <p>Hero sekce zobrazí obrázek týmu. Přidáme třídy na sekci a na obrázek.</p>
 
-        <div class="task-box">
-          <h3>Přidejte třídu na obrázek</h3>
+        <!-- <div class="task-box">
+          <h3>Přidejte třídy</h3>
+        </div> -->
+
+        <div class="class-list">
+          <h3>Třídy k přidání</h3>
+          <table>
+            <tr>
+              <td>Hero sekce</td>
+              <td><code class="copy-class" data-class="hero">hero</code></td>
+            </tr>
+            <tr>
+              <td>Obrázek</td>
+              <td><code class="copy-class" data-class="hero-img">hero-img</code></td>
+            </tr>
+          </table>
         </div>
 
         <div class="before-after">
           <div class="ba-col">
             <span class="ba-label ba-before">Před</span>
-            <pre><code class="language-html">&lt;img src="hero-bg.png" alt="Debug Divas"&gt;</code></pre>
+            <pre><code class="language-html">&lt;section&gt;
+  &lt;img src="hero-bg.png" alt="Debug Divas"&gt;
+&lt;/section&gt;</code></pre>
           </div>
           <div class="ba-col">
             <span class="ba-label ba-after">Po</span>
-            <pre><code class="language-html">&lt;img src="hero-bg.png" alt="Debug Divas" class="hero-img"&gt;</code></pre>
+            <pre><code class="language-html">&lt;section class="hero"&gt;
+  &lt;img src="hero-bg.png" alt="Debug Divas" class="hero-img"&gt;
+&lt;/section&gt;</code></pre>
           </div>
         </div>
 
@@ -689,18 +739,21 @@
 
         <div class="tip-box">
           <strong>Co je <code>vh</code>?</strong> Jednotka <code>vh</code> = procento výšky okna prohlížeče.
-          <code>75vh</code> = obrázek nikdy nezabere víc než 3/4 obrazovky. Uživatel ví, že má scrollovat dál.
+          <code>75vh</code> = obrázek nikdy nezabere víc než 3/4 obrazovky.
         </div>
 
         <div class="checkpoint">
-          <strong>Kontrola:</strong> Obrázek je celý viditelný a pod ním je vidět začátek Team sekce.
+          <strong>Kontrola:</strong> Obrázek je celý viditelný a pod ním je vidět začátek Team sekce. Sekce Hero je
+          kompletní!
         </div>
       </section>
 
-      <!-- STEP 12 -->
-      <section class="step" id="step-12">
+      <!-- ==================== DOKONČENÍ ==================== -->
+
+      <!-- STEP 13 -->
+      <section class="step" id="step-13">
         <div class="step-header">
-          <div class="step-number">13</div>
+          <div class="step-number">1</div>
           <h2>Max-width pro širokoúhlé monitory</h2>
         </div>
         <p>Na širokých monitorech se obsah roztahuje. Třídy ze sekcí už toto řeší — ale ověřme, že <code>body</code> má
@@ -717,13 +770,12 @@
         </div>
 
         <div class="checkpoint done-box">
-          <strong>Hotovo!</strong> Prošli jste všech 13 kroků. Vaše stránka by měla vypadat jako finální design Debug
+          <strong>Hotovo!</strong> Prošli jste všech 14 kroků. Vaše stránka by měla vypadat jako finální design Debug
           Divas. Gratulujeme!
         </div>
       </section>
 
     </main>
-
   </div><!-- /main-wrap -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
