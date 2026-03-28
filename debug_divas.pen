@@ -7287,6 +7287,7 @@
         "AgileAngles": "Default"
       },
       "width": 1920,
+      "height": 2753,
       "fill": "$--aa-bg-dark",
       "layout": "vertical",
       "alignItems": "center",
@@ -8734,6 +8735,7 @@
         "AgileAngles": "Default"
       },
       "width": 1920,
+      "height": 2222,
       "fill": "$--aa-bg-dark",
       "layout": "vertical",
       "alignItems": "center",
@@ -10049,6 +10051,39 @@
           ]
         }
       ]
+    },
+    {
+      "type": "text",
+      "id": "h5yU1",
+      "x": -1118,
+      "y": 1409,
+      "fill": "#000000",
+      "content": "Landing Page",
+      "fontFamily": "Inter",
+      "fontSize": 100,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "e42bd",
+      "x": -1119,
+      "y": 4479,
+      "fill": "#000000",
+      "content": "Team's Bug Page",
+      "fontFamily": "Inter",
+      "fontSize": 100,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "I61Lw",
+      "x": -1118,
+      "y": 6961,
+      "fill": "#000000",
+      "content": "Member detail",
+      "fontFamily": "Inter",
+      "fontSize": 100,
+      "fontWeight": "normal"
     }
   ],
   "themes": {
