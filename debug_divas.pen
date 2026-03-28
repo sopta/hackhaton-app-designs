@@ -4512,7 +4512,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "Gemini_Generated_Image_f5rhukf5rhukf5rh.png",
+                "url": "images/Gemini_Generated_Image_f5rhukf5rhukf5rh.png",
                 "mode": "fill"
               },
               "cornerRadius": 16,
