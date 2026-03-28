@@ -2366,8 +2366,8 @@
     {
       "type": "frame",
       "id": "1rLMt",
-      "x": 2110,
-      "y": 0,
+      "x": 0,
+      "y": 3102,
       "name": "Debug Divas - Bug Hunt Page",
       "context": "Frame má šířku 1920px aby simuloval widescreen monitor. Obsah sekcí je centrovaný na max-width 1440px (odpovídá designu). Po stranách prosvítá tmavé body pozadí — přesně tak, jak to bude vypadat v HTML s max-width: 1440px; margin: 0 auto na sekcích. Viz docs/sirokouhly-monitor-reseni-cz.md. Design: JohnyX.",
       "theme": {
@@ -3813,8 +3813,8 @@
     {
       "type": "frame",
       "id": "IGOYd",
-      "x": 4266,
-      "y": 0,
+      "x": 0,
+      "y": 5971,
       "name": "Debug Divas - Member Detail Template",
       "context": "Frame má šířku 1920px aby simuloval widescreen monitor. Obsah sekcí je centrovaný na max-width 1440px (odpovídá designu). Po stranách prosvítá tmavé body pozadí — přesně tak, jak to bude vypadat v HTML s max-width: 1440px; margin: 0 auto na sekcích. Viz docs/sirokouhly-monitor-reseni-cz.md. Design: JohnyX.",
       "theme": {
@@ -5137,14 +5137,15 @@
     {
       "type": "frame",
       "id": "taoZH",
-      "x": 0,
-      "y": 3182,
+      "x": 2020,
+      "y": 0,
       "name": "Agile Angels - Landing Page",
       "context": "Frame má šířku 1920px aby simuloval widescreen monitor. Obsah sekcí je centrovaný na max-width 1440px (odpovídá designu). Po stranách prosvítá tmavé body pozadí — přesně tak, jak to bude vypadat v HTML s max-width: 1440px; margin: 0 auto na sekcích. Viz docs/sirokouhly-monitor-reseni-cz.md. Design: JohnyX.",
       "theme": {
         "AgileAngles": "Default"
       },
       "width": 1920,
+      "height": 2940,
       "fill": "$--aa-bg-dark",
       "layout": "vertical",
       "alignItems": "center",
@@ -6523,15 +6524,35 @@
               "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "EbKjq",
-                  "name": "loveTxt",
-                  "fill": "$--aa-accent-magenta",
-                  "content": "I ❤ BUG HUNTING",
-                  "fontFamily": "Bangers",
-                  "fontSize": 18,
-                  "fontWeight": "normal",
-                  "letterSpacing": 2
+                  "type": "frame",
+                  "id": "u23O9",
+                  "name": "badge",
+                  "fill": "$--aa-bg-card-glass",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$--aa-accent-magenta"
+                  },
+                  "gap": 6,
+                  "padding": [
+                    10,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3JoR8",
+                      "name": "badgeHeart",
+                      "fill": "$--aa-accent-magenta",
+                      "content": "I ❤ BUG HUNTING",
+                      "fontFamily": "Bangers",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -7259,7 +7280,7 @@
       "type": "frame",
       "id": "Z1LF9",
       "x": 2020,
-      "y": 3182,
+      "y": 3102,
       "name": "Agile Angels - Bug Hunt Page",
       "context": "Frame má šířku 1920px aby simuloval widescreen monitor. Obsah sekcí je centrovaný na max-width 1440px (odpovídá designu). Po stranách prosvítá tmavé body pozadí — přesně tak, jak to bude vypadat v HTML s max-width: 1440px; margin: 0 auto na sekcích. Viz docs/sirokouhly-monitor-reseni-cz.md. Design: JohnyX.",
       "theme": {
@@ -8705,8 +8726,8 @@
     {
       "type": "frame",
       "id": "LgJM4",
-      "x": 4040,
-      "y": 3182,
+      "x": 2020,
+      "y": 5971,
       "name": "Agile Angels - Member Detail Template",
       "context": "Frame má šířku 1920px aby simuloval widescreen monitor. Obsah sekcí je centrovaný na max-width 1440px (odpovídá designu). Po stranách prosvítá tmavé body pozadí — přesně tak, jak to bude vypadat v HTML s max-width: 1440px; margin: 0 auto na sekcích. Viz docs/sirokouhly-monitor-reseni-cz.md. Design: JohnyX.",
       "theme": {
