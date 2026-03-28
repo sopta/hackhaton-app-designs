@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Hunt — Debug Divas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Sora:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- HERO BANNER -->
+  <section class="bh-hero">
+    <span class="bh-alert-badge">
+      <i data-lucide="triangle-alert" class="bh-alert-icon"></i>
+      CLASSIFIED MISSION
+    </span>
+    <div class="bh-title-row">
+      <i data-lucide="bug" class="bh-bug-icon"></i>
+      <h1 class="bh-title">WELCOME TO THE BUG HUNT</h1>
+      <i data-lucide="bug" class="bh-bug-icon"></i>
+    </div>
+    <p class="bh-subtitle">You clicked the button. There's no going back now.</p>
+    <p class="bh-warning">// DANGER LEVEL: MAXIMUM  |  BUGS SPOTTED: &infin;  |  COFFEE REMAINING: 2%</p>
+  </section>
+
+  <!-- IMAGE SECTION -->
+  <section class="bh-image-section">
+    <div class="bh-photo-frame">
+      <img src="images/bug-hunt-photo_compressed.png" alt="Debug Divas team" class="bh-photo">
+      <div class="bh-caption-bar">
+        <i data-lucide="camera" class="bh-caption-icon"></i>
+        <span class="bh-caption-text">EXHIBIT A: The exact moment the team found a production bug on a Friday at 4:59 PM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERBOARD SECTION -->
+  <section class="bh-leaderboard-section">
+    <h2 class="bh-section-title">BUG HUNT LEADERBOARD</h2>
+    <p class="bh-section-sub">Season 2026 — Sprint 42 Rankings</p>
+    <div class="bh-leaderboard">
+      <div class="bh-lb-header">
+        <span class="bh-lb-rank">#</span>
+        <span class="bh-lb-name">HUNTER</span>
+        <span class="bh-lb-bugs">BUGS</span>
+        <span class="bh-lb-title-col">TITLE</span>
+      </div>
+      <div class="bh-lb-row bh-lb-row-light">
+        <span class="bh-lb-rank bh-rank-gold">1</span>
+        <span class="bh-lb-name bh-name-white">Karolina</span>
+        <span class="bh-lb-bugs bh-bugs-cyan">847</span>
+        <span class="bh-lb-title-col bh-title-gold">Bug Whisperer Supreme</span>
+      </div>
+      <div class="bh-lb-row bh-lb-row-dark">
+        <span class="bh-lb-rank bh-rank-muted">2</span>
+        <span class="bh-lb-name bh-name-white">Alice</span>
+        <span class="bh-lb-bugs bh-bugs-cyan">723</span>
+        <span class="bh-lb-title-col bh-title-muted">Pragmatic Destroyer</span>
+      </div>
+      <div class="bh-lb-row bh-lb-row-light">
+        <span class="bh-lb-rank bh-rank-muted">3</span>
+        <span class="bh-lb-name bh-name-white">Michaela</span>
+        <span class="bh-lb-bugs bh-bugs-cyan">691</span>
+        <span class="bh-lb-title-col bh-title-muted">The Analytical Assassin</span>
+      </div>
+      <div class="bh-lb-row bh-lb-row-dark">
+        <span class="bh-lb-rank bh-rank-muted">4</span>
+        <span class="bh-lb-name bh-name-white">Pavla</span>
+        <span class="bh-lb-bugs bh-bugs-cyan">589</span>
+        <span class="bh-lb-title-col bh-title-muted">CSS Pixel Police</span>
+      </div>
+      <div class="bh-lb-row bh-lb-row-light">
+        <span class="bh-lb-rank bh-rank-muted">5</span>
+        <span class="bh-lb-name bh-name-white">Veronika</span>
+        <span class="bh-lb-bugs bh-bugs-cyan">512</span>
+        <span class="bh-lb-title-col bh-title-muted">Chaos Tamer Extraordinaire</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUG TYPES SECTION -->
+  <section class="bh-bugtypes-section">
+    <h2 class="bh-section-title">RARE BUG TYPES DISCOVERED</h2>
+    <p class="bh-section-sub">Collect them all! (Please don't, we're begging you.)</p>
+    <div class="bh-badge-row">
+      <div class="bh-bug-card">
+        <i data-lucide="bug" class="bh-bc-icon" style="color: var(--red)"></i>
+        <span class="bh-bc-name">The Friday 5pm Bug</span>
+        <p class="bh-bc-desc">Only appears when you're about to leave. Feeds on weekend plans.</p>
+        <span class="bh-rarity bh-rarity-red">LEGENDARY</span>
+      </div>
+      <div class="bh-bug-card">
+        <i data-lucide="eye-off" class="bh-bc-icon" style="color: var(--yellow)"></i>
+        <span class="bh-bc-name">The Invisible Bug</span>
+        <p class="bh-bc-desc">Works on everyone's machine except yours. Gaslight champion since 2019.</p>
+        <span class="bh-rarity bh-rarity-yellow">MYTHICAL</span>
+      </div>
+      <div class="bh-bug-card">
+        <i data-lucide="repeat" class="bh-bc-icon" style="color: var(--cyan)"></i>
+        <span class="bh-bc-name">The Zombie Bug</span>
+        <p class="bh-bc-desc">Was fixed 3 sprints ago. Somehow back from the dead. Again.</p>
+        <span class="bh-rarity bh-rarity-cyan">EPIC</span>
+      </div>
+      <div class="bh-bug-card">
+        <i data-lucide="ghost" class="bh-bc-icon" style="color: var(--green)"></i>
+        <span class="bh-bc-name">The 'Feature' Bug</span>
+        <p class="bh-bc-desc">Dev says it's intended behavior. PM says it's a bug. The war has no end.</p>
+        <span class="bh-rarity bh-rarity-green">COMMON</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER FUN -->
+  <section class="bh-footer-fun">
+    <div class="bh-fun-quote">
+      <i data-lucide="quote" class="bh-fq-icon"></i>
+      <p class="bh-fq-text">'It worked on my machine' is not a valid test result.</p>
+      <span class="bh-fq-author">— Every developer, right before a Debug Diva proves them wrong</span>
+    </div>
+    <div class="bh-stats-row">
+      <div class="bh-stat-card bh-stat-cyan">
+        <span class="bh-stat-num" style="color: var(--cyan)">3,362</span>
+        <span class="bh-stat-label">Bugs Squashed</span>
+      </div>
+      <div class="bh-stat-card bh-stat-yellow">
+        <span class="bh-stat-num" style="color: var(--yellow)">&infin;</span>
+        <span class="bh-stat-label">Coffees Consumed</span>
+      </div>
+      <div class="bh-stat-card bh-stat-red">
+        <span class="bh-stat-num" style="color: var(--red)">0</span>
+        <span class="bh-stat-label">Bugs That Escaped</span>
+      </div>
+      <div class="bh-stat-card bh-stat-green">
+        <span class="bh-stat-num" style="color: var(--green)">42</span>
+        <span class="bh-stat-label">Sprints Survived</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM BAR -->
+  <section class="bh-bottom-bar">
+    <div class="bh-bottom-divider"></div>
+    <p class="bh-disclaimer">DISCLAIMER: No actual bugs were harmed during this hunt. They were documented, reproduced, and sent to developer jail.</p>
+    <a href="index.html" class="bh-back-btn">
+      <i data-lucide="arrow-left" class="bh-back-icon"></i>
+      <span>ESCAPE THE BUG ZONE</span>
+    </a>
+    <p class="bh-copyright">&copy; 2026 Debug Divas | Powered by caffeine, determination, and an unreasonable number of test cases</p>
+  </section>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
