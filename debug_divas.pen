@@ -6820,13 +6820,13 @@
                               "height": 18,
                               "iconFontName": "bug",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-yellow"
+                              "fill": "$--aa-accent-red"
                             },
                             {
                               "type": "text",
                               "id": "MmZBQ",
                               "name": "c3w",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--aa-accent-red",
                               "content": "\"Can't reproduce\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -6883,13 +6883,13 @@
                               "height": 18,
                               "iconFontName": "timer",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-magenta"
+                              "fill": "$--aa-accent-teal"
                             },
                             {
                               "type": "text",
                               "id": "c0QQn",
                               "name": "c4w",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--aa-accent-teal",
                               "content": "\"Quick fix before release\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -11511,13 +11511,13 @@
                               "height": 18,
                               "iconFontName": "coffee",
                               "iconFontFamily": "lucide",
-                              "fill": "$--qa-accent-brown"
+                              "fill": "$--qa-accent-mustard"
                             },
                             {
                               "type": "text",
                               "id": "Bulmx",
                               "name": "c1w",
-                              "fill": "$--qa-accent-brown",
+                              "fill": "$--qa-accent-mustard",
                               "content": "\"It works on my machine\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -11646,13 +11646,13 @@
                               "height": 18,
                               "iconFontName": "bug",
                               "iconFontFamily": "lucide",
-                              "fill": "$--qa-accent-brown"
+                              "fill": "$--qa-accent-red"
                             },
                             {
                               "type": "text",
                               "id": "ESTTO",
                               "name": "c3w",
-                              "fill": "$--qa-accent-brown",
+                              "fill": "$--qa-accent-red",
                               "content": "\"Can't reproduce\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -11709,13 +11709,13 @@
                               "height": 18,
                               "iconFontName": "timer",
                               "iconFontFamily": "lucide",
-                              "fill": "$--qa-accent-brown"
+                              "fill": "$--qa-accent-olive"
                             },
                             {
                               "type": "text",
                               "id": "apTdY",
                               "name": "c4w",
-                              "fill": "$--qa-accent-brown",
+                              "fill": "$--qa-accent-olive",
                               "content": "\"Quick fix before release\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -11781,13 +11781,13 @@
                               "height": 18,
                               "iconFontName": "message-circle",
                               "iconFontFamily": "lucide",
-                              "fill": "$--qa-accent-brown"
+                              "fill": "$--qa-accent-mustard"
                             },
                             {
                               "type": "text",
                               "id": "4qEG6",
                               "name": "c5w",
-                              "fill": "$--qa-accent-brown",
+                              "fill": "$--qa-accent-mustard",
                               "content": "\"The requirements were clear\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -16335,13 +16335,13 @@
                               "height": 18,
                               "iconFontName": "coffee",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-yellow"
+                              "fill": "$--rt-accent-neon"
                             },
                             {
                               "type": "text",
                               "id": "9xKa0",
                               "name": "c1w",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-neon",
                               "content": "\"It works on my machine\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -16398,13 +16398,13 @@
                               "height": 18,
                               "iconFontName": "shield",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-magenta"
+                              "fill": "$--rt-accent-purple"
                             },
                             {
                               "type": "text",
                               "id": "NE2l4",
                               "name": "c2w",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-purple",
                               "content": "\"Minor UI issue\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -16470,13 +16470,13 @@
                               "height": 18,
                               "iconFontName": "bug",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-yellow"
+                              "fill": "$--rt-accent-red"
                             },
                             {
                               "type": "text",
                               "id": "FWB5y",
                               "name": "c3w",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-red",
                               "content": "\"Can't reproduce\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -16533,13 +16533,13 @@
                               "height": 18,
                               "iconFontName": "timer",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-magenta"
+                              "fill": "$--rt-accent-electric"
                             },
                             {
                               "type": "text",
                               "id": "4Bdjn",
                               "name": "c4w",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-electric",
                               "content": "\"Quick fix before release\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -16605,13 +16605,13 @@
                               "height": 18,
                               "iconFontName": "message-circle",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-yellow"
+                              "fill": "$--rt-accent-neon"
                             },
                             {
                               "type": "text",
                               "id": "61QcX",
                               "name": "c5w",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-neon",
                               "content": "\"The requirements were clear\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -16668,13 +16668,13 @@
                               "height": 18,
                               "iconFontName": "sparkles",
                               "iconFontFamily": "lucide",
-                              "fill": "$--aa-accent-magenta"
+                              "fill": "$--rt-accent-purple"
                             },
                             {
                               "type": "text",
                               "id": "xI2wf",
                               "name": "c6w",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-purple",
                               "content": "\"Edge case\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -21331,13 +21331,13 @@
                               "height": 18,
                               "iconFontName": "bug",
                               "iconFontFamily": "lucide",
-                              "fill": "$--sv-accent-blue"
+                              "fill": "$--sv-accent-red"
                             },
                             {
                               "type": "text",
                               "id": "fQ0QI",
                               "name": "c3w",
-                              "fill": "$--sv-accent-blue",
+                              "fill": "$--sv-accent-red",
                               "content": "\"Can't reproduce\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -21394,13 +21394,13 @@
                               "height": 18,
                               "iconFontName": "timer",
                               "iconFontFamily": "lucide",
-                              "fill": "$--sv-accent-orange"
+                              "fill": "$--sv-accent-green"
                             },
                             {
                               "type": "text",
                               "id": "XjbOn",
                               "name": "c4w",
-                              "fill": "$--sv-accent-orange",
+                              "fill": "$--sv-accent-green",
                               "content": "\"Quick fix before release\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -26149,13 +26149,13 @@
                               "height": 18,
                               "iconFontName": "bug",
                               "iconFontFamily": "lucide",
-                              "fill": "$--bh-accent-cyan"
+                              "fill": "$--bh-accent-red"
                             },
                             {
                               "type": "text",
                               "id": "Hk4hy",
                               "name": "c3w",
-                              "fill": "$--bh-accent-cyan",
+                              "fill": "$--bh-accent-red",
                               "content": "\"Can't reproduce\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -26212,13 +26212,13 @@
                               "height": 18,
                               "iconFontName": "timer",
                               "iconFontFamily": "lucide",
-                              "fill": "$--bh-accent-magenta"
+                              "fill": "$--bh-accent-green"
                             },
                             {
                               "type": "text",
                               "id": "xAc1k",
                               "name": "c4w",
-                              "fill": "$--bh-accent-magenta",
+                              "fill": "$--bh-accent-green",
                               "content": "\"Quick fix before release\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -30472,6 +30472,61 @@
           "value": "#D4C4E8",
           "theme": {
             "BootcampHeroes": "Default"
+          }
+        }
+      ]
+    },
+    "--aa-accent-teal": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00BFA5",
+          "theme": {
+            "AgileAngles": "Default"
+          }
+        }
+      ]
+    },
+    "--bh-accent-green": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#4CAF50",
+          "theme": {
+            "BootcampHeroes": "Default"
+          }
+        }
+      ]
+    },
+    "--qa-accent-olive": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#7A8B3C",
+          "theme": {
+            "Qaffeine": "Default"
+          }
+        }
+      ]
+    },
+    "--rt-accent-electric": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#00E5FF",
+          "theme": {
+            "RaIT": "Default"
+          }
+        }
+      ]
+    },
+    "--sv-accent-green": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#2D6A4F",
+          "theme": {
+            "Suverezity": "Default"
           }
         }
       ]

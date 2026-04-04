@@ -8,15 +8,15 @@
 }
 
 :root {
-  --bg-dark: #0F1923;
-  --bg-mid: #1C2A43;
-  --color-a: #00D4FF;
-  --color-b: #FFB800;
+  --bg-dark: #1A051D;
+  --bg-mid: #2D0A31;
+  --color-a: #FFC107;
+  --color-b: #D81159;
   --color-c: #FF3B3B;
-  --color-d: #00FF88;
-  --white: #FFFFFF;
-  --text-muted: #8BA3C7;
-  --text-dark: #4A6080;
+  --color-d: #00BFA5;
+  --white: #F8F9FA;
+  --text-muted: #E0D4E8;
+  --text-dark: #B8A9C9;
   --card-bg: rgba(255, 255, 255, 0.063);
   --card-border: rgba(255, 255, 255, 0.125);
 }
@@ -56,7 +56,7 @@ body {
 .hero-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(68, 67, 67, 0) 0%, rgba(0, 0, 0, 0.41) 100%);
+  background: linear-gradient(to bottom, transparent 60%, var(--bg-mid) 100%);
   pointer-events: none;
 }
 
@@ -178,12 +178,51 @@ body {
 
 /* ===== TEAM SECTION ===== */
 .team-section {
+  position: relative;
   background: var(--bg-mid);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 60px;
   gap: 48px;
+  overflow: hidden;
+}
+
+.team-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.team-section::before,
+.team-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.team-section::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--bg-mid), transparent);
+}
+
+.team-section::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--bg-mid), transparent);
+}
+
+.team-section > *:not(.team-bg-img) {
+  position: relative;
+  z-index: 2;
 }
 
 .team-label {
@@ -196,10 +235,10 @@ body {
 }
 
 .team-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  font-family: 'Bangers', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1px;
   color: var(--white);
   text-align: center;
   margin-top: -36px;
@@ -219,7 +258,7 @@ a.team-card {
 
 a.team-card:hover {
   border-color: var(--color-a);
-  box-shadow: 0 0 24px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 24px rgba(216, 17, 89, 0.4);
 }
 
 .team-card {
@@ -229,10 +268,10 @@ a.team-card:hover {
   align-items: center;
   gap: 16px;
   padding: 24px;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.188);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 0;
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.19);
+  box-shadow: 0 0 20px rgba(216, 17, 89, 0.25);
 }
 
 .team-icon {
@@ -322,10 +361,10 @@ a.team-card:hover {
 }
 
 .sprint-title {
-  font-family: 'Sora', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 38px;
-  font-weight: 700;
-  letter-spacing: -1.5px;
+  font-weight: 400;
+  letter-spacing: 2px;
   color: var(--white);
 }
 
@@ -354,11 +393,11 @@ a.team-card:hover {
 }
 
 .col-backlog {
-  border: 1px solid rgba(0, 212, 255, 0.19);
+  border: 1px solid rgba(255, 193, 7, 0.25);
 }
 
 .col-qa {
-  border: 1px solid rgba(255, 184, 0, 0.19);
+  border: 1px solid rgba(216, 17, 89, 0.25);
 }
 
 .col-defects {
@@ -418,12 +457,12 @@ a.team-card:hover {
 }
 
 .count-a {
-  background: rgba(0, 212, 255, 0.25);
+  background: rgba(255, 193, 7, 0.25);
   color: var(--color-a);
 }
 
 .count-b {
-  background: rgba(255, 184, 0, 0.125);
+  background: rgba(216, 17, 89, 0.25);
   color: var(--color-b);
 }
 
@@ -438,11 +477,11 @@ a.team-card:hover {
 }
 
 .divider-a {
-  background: rgba(0, 212, 255, 0.25);
+  background: rgba(255, 193, 7, 0.25);
 }
 
 .divider-b {
-  background: rgba(255, 184, 0, 0.19);
+  background: rgba(216, 17, 89, 0.25);
 }
 
 .divider-c {
@@ -455,7 +494,7 @@ a.team-card:hover {
   gap: 8px;
   padding: 14px;
   border-radius: 8px;
-  background: rgba(28, 42, 67, 0.5);
+  background: rgba(61, 26, 66, 0.5);
   border: 1px solid var(--card-border);
 }
 
@@ -470,12 +509,12 @@ a.team-card:hover {
 }
 
 .tag-backlog {
-  background: rgba(0, 212, 255, 0.25);
+  background: rgba(255, 193, 7, 0.25);
   color: var(--color-a);
 }
 
 .tag-qa {
-  background: rgba(255, 184, 0, 0.125);
+  background: rgba(216, 17, 89, 0.25);
   color: var(--color-b);
 }
 
@@ -505,15 +544,15 @@ a.team-card:hover {
 }
 
 .heart-badge {
-  font-family: 'Sora', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--color-c);
+  color: var(--color-b);
   padding: 10px 24px;
   border-radius: 8px;
   background: var(--card-bg);
-  border: 1px solid var(--color-c);
+  border: 1px solid var(--color-b);
 }
 
 /* ===== DICTIONARY SECTION ===== */
@@ -539,7 +578,7 @@ a.team-card:hover {
   gap: 6px;
   padding: 6px 16px;
   border-radius: 20px;
-  background: var(--color-c);
+  background: var(--color-b);
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -554,7 +593,7 @@ a.team-card:hover {
 }
 
 .dict-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 42px;
   font-weight: 400;
   color: var(--white);
@@ -660,7 +699,7 @@ a.team-card:hover {
   padding: 32px 40px;
   border-radius: 12px;
   background: var(--bg-dark);
-  border: 1px solid rgba(0, 212, 255, 0.19);
+  border: 1px solid rgba(216, 17, 89, 0.19);
   max-width: 900px;
   width: 100%;
 }
@@ -725,7 +764,7 @@ a.team-card:hover {
 }
 
 .footer-logo-text {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: var(--white);
@@ -805,7 +844,7 @@ a.team-card:hover {
 }
 
 .bh-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 64px;
   font-weight: 400;
   color: var(--white);
@@ -846,7 +885,7 @@ a.team-card:hover {
   border-radius: 16px;
   overflow: hidden;
   border: 3px solid var(--color-a);
-  box-shadow: 0 0 40px 8px rgba(0, 212, 255, 0.25);
+  box-shadow: 0 0 40px 8px rgba(216, 17, 89, 0.25);
 }
 
 .bh-photo {
@@ -898,7 +937,7 @@ a.team-card:hover {
 }
 
 .bh-section-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 36px;
   font-weight: 400;
   color: var(--white);
@@ -920,7 +959,7 @@ a.team-card:hover {
   max-width: 900px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(0, 212, 255, 0.19);
+  border: 1px solid rgba(216, 17, 89, 0.19);
 }
 
 .bh-lb-header {
@@ -969,7 +1008,7 @@ a.team-card:hover {
 }
 
 .bh-lb-row-dark {
-  background: rgba(28, 42, 67, 0.5);
+  background: rgba(61, 26, 66, 0.5);
 }
 
 .bh-lb-row .bh-lb-rank,
@@ -1158,12 +1197,12 @@ a.team-card:hover {
   padding: 24px 16px;
   border-radius: 12px;
   background: var(--card-bg);
-  border: 1px solid rgba(0, 212, 255, 0.19);
+  border: 1px solid rgba(216, 17, 89, 0.19);
   width: 180px;
 }
 
 .bh-stat-num {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 36px;
   font-weight: 400;
 }
@@ -1274,7 +1313,7 @@ a.team-card:hover {
   border-radius: 50%;
   background: var(--card-bg);
   border: 3px solid var(--color-a);
-  box-shadow: 0 0 30px 6px rgba(0, 212, 255, 0.25);
+  box-shadow: 0 0 30px 6px rgba(216, 17, 89, 0.25);
 }
 
 .md-photo-icon {
@@ -1330,7 +1369,7 @@ a.team-card:hover {
 }
 
 .md-name {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 56px;
   font-weight: 400;
   color: var(--white);
@@ -1368,7 +1407,7 @@ a.team-card:hover {
 .md-divider {
   width: 400px;
   height: 1px;
-  background: rgba(0, 212, 255, 0.19);
+  background: rgba(216, 17, 89, 0.19);
 }
 
 .md-bio {
@@ -1392,7 +1431,7 @@ a.team-card:hover {
 }
 
 .md-ms-num {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 28px;
   font-weight: 400;
 }
@@ -1428,7 +1467,7 @@ a.team-card:hover {
 }
 
 .md-sec-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: var(--white);
@@ -1579,7 +1618,7 @@ a.team-card:hover {
   width: 60px;
   height: 80px;
   background: var(--bg-dark);
-  font-family: 'Anton', sans-serif;
+  font-family: 'Bangers', sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
