@@ -10594,7 +10594,7 @@
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "#C4960F30"
+                    "fill": "$--qa-accent-gold-dim"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -10613,7 +10613,7 @@
                           "cornerRadius": 4,
                           "id": "BxPUD",
                           "name": "blDot",
-                          "fill": "#C4960F",
+                          "fill": "$--qa-accent-gold",
                           "width": 8,
                           "height": 8
                         },
@@ -10621,7 +10621,7 @@
                           "type": "text",
                           "id": "COLwU",
                           "name": "blTitle",
-                          "fill": "#C4960F",
+                          "fill": "$--qa-accent-gold",
                           "content": "BACKLOG",
                           "fontFamily": "Inter",
                           "fontSize": 11,
@@ -10632,7 +10632,7 @@
                           "type": "frame",
                           "id": "BuSxW",
                           "name": "blCnt",
-                          "fill": "#C4960F30",
+                          "fill": "$--qa-accent-gold-dim",
                           "cornerRadius": 4,
                           "padding": [
                             2,
@@ -10657,7 +10657,7 @@
                       "type": "rectangle",
                       "id": "GoSb8",
                       "name": "blDiv",
-                      "fill": "#C4960F30",
+                      "fill": "$--qa-accent-gold-dim",
                       "width": "fill_container",
                       "height": 1
                     },
@@ -10681,7 +10681,7 @@
                           "type": "frame",
                           "id": "pnjgg",
                           "name": "t1tag",
-                          "fill": "#C4960F30",
+                          "fill": "$--qa-accent-gold-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -10745,7 +10745,7 @@
                           "type": "frame",
                           "id": "bycJQ",
                           "name": "t2tag",
-                          "fill": "#C4960F30",
+                          "fill": "$--qa-accent-gold-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -10809,7 +10809,7 @@
                           "type": "frame",
                           "id": "R2V61",
                           "name": "t3tag",
-                          "fill": "#C4960F30",
+                          "fill": "$--qa-accent-gold-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -11511,13 +11511,13 @@
                               "height": 18,
                               "iconFontName": "coffee",
                               "iconFontFamily": "lucide",
-                              "fill": "$--qa-accent-mustard"
+                              "fill": "$--qa-accent-gold"
                             },
                             {
                               "type": "text",
                               "id": "Bulmx",
                               "name": "c1w",
-                              "fill": "$--qa-accent-mustard",
+                              "fill": "$--qa-accent-gold",
                               "content": "\"It works on my machine\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -11781,13 +11781,13 @@
                               "height": 18,
                               "iconFontName": "message-circle",
                               "iconFontFamily": "lucide",
-                              "fill": "$--qa-accent-mustard"
+                              "fill": "$--qa-accent-gold"
                             },
                             {
                               "type": "text",
                               "id": "4qEG6",
                               "name": "c5w",
-                              "fill": "$--qa-accent-mustard",
+                              "fill": "$--qa-accent-gold",
                               "content": "\"The requirements were clear\"",
                               "fontFamily": "Sora",
                               "fontSize": 14,
@@ -30527,6 +30527,28 @@
           "value": "#2D6A4F",
           "theme": {
             "Suverezity": "Default"
+          }
+        }
+      ]
+    },
+    "--qa-accent-gold": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#C4960F",
+          "theme": {
+            "Qaffeine": "Default"
+          }
+        }
+      ]
+    },
+    "--qa-accent-gold-dim": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#C4960F30",
+          "theme": {
+            "Qaffeine": "Default"
           }
         }
       ]
