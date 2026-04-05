@@ -24583,7 +24583,7 @@
           "name": "Hero Section",
           "clip": true,
           "width": 1440,
-          "height": 913,
+          "height": 900,
           "fill": [
             {
               "type": "image",
@@ -24601,15 +24601,15 @@
               },
               "colors": [
                 {
-                  "color": "#2A1B3D00",
+                  "color": "#3D255500",
                   "position": 0
                 },
                 {
-                  "color": "#2A1B3D00",
-                  "position": 0.6
+                  "color": "#3D255500",
+                  "position": 0.4
                 },
                 {
-                  "color": "#2A1B3D",
+                  "color": "#3D2555",
                   "position": 0.95
                 }
               ]
@@ -24646,6 +24646,8 @@
           "layout": "vertical",
           "gap": 48,
           "padding": [
+            20,
+            60,
             80,
             60
           ],
