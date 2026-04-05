@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Detail — RaIT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Sora:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- PROFILE HERO -->
+  <section class="md-profile-hero">
+    <div class="md-photo-col">
+      <div class="md-photo-placeholder">
+        <i data-lucide="user" class="md-photo-icon"></i>
+        <span class="md-photo-hint">YOUR PHOTO</span>
+      </div>
+      <span class="md-status-badge">
+        <span class="md-status-dot"></span>
+        ACTIVELY HUNTING BUGS
+      </span>
+    </div>
+    <div class="md-info-col">
+      <span class="md-name-label">CODENAME</span>
+      <h1 class="md-name">[ YOUR NAME HERE ]</h1>
+      <div class="md-role-frame">
+        <span class="md-role-badge">YOUR ROLE</span>
+        <span class="md-team-badge">RaIT</span>
+      </div>
+      <div class="md-divider"></div>
+      <p class="md-bio">Write something cool about yourself. What's your superpower? Why did you choose QA? What's the weirdest bug you've ever found?</p>
+      <div class="md-mini-stats">
+        <div class="md-mini-stat">
+          <span class="md-ms-num" style="color: var(--color-b)">???</span>
+          <span class="md-ms-label">Bugs Found</span>
+        </div>
+        <div class="md-mini-stat">
+          <span class="md-ms-num" style="color: var(--color-a)">???</span>
+          <span class="md-ms-label">Coffees Drunk</span>
+        </div>
+        <div class="md-mini-stat">
+          <span class="md-ms-num" style="color: var(--color-c)">???</span>
+          <span class="md-ms-label">Devs Annoyed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QA CONFESSIONS -->
+  <section class="md-confessions">
+    <div class="md-sec-header">
+      <i data-lucide="skull" class="md-sec-icon" style="color: var(--color-c)"></i>
+      <h2 class="md-sec-title">MY QA CONFESSIONS</h2>
+    </div>
+    <p class="md-sec-sub">Honest truths from the testing trenches. Fill in your darkest QA secrets.</p>
+    <div class="md-conf-grid">
+      <div class="md-conf-card">
+        <span class="md-conf-q" style="color: var(--color-b)">Weirdest bug I ever found:</span>
+        <p class="md-conf-a">[ Write your answer here... ]</p>
+      </div>
+      <div class="md-conf-card">
+        <span class="md-conf-q" style="color: var(--color-a)">Thing I secretly test first:</span>
+        <p class="md-conf-a">[ Write your answer here... ]</p>
+      </div>
+      <div class="md-conf-card">
+        <span class="md-conf-q" style="color: var(--color-c)">My reaction when prod breaks:</span>
+        <p class="md-conf-a">[ Write your answer here... ]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SURVIVAL KIT -->
+  <section class="md-survival">
+    <div class="md-sec-header">
+      <i data-lucide="briefcase" class="md-sec-icon" style="color: var(--color-b)"></i>
+      <h2 class="md-sec-title">MY QA SURVIVAL KIT</h2>
+    </div>
+    <p class="md-sec-sub">Every tester has their essentials. List yours.</p>
+    <div class="md-kit-grid">
+      <div class="md-kit-card">
+        <i data-lucide="coffee" class="md-kit-icon" style="color: var(--color-a)"></i>
+        <span class="md-kit-label">Fuel of Choice</span>
+        <span class="md-kit-val">[ Coffee? Tea? Energy drink? ]</span>
+      </div>
+      <div class="md-kit-card">
+        <i data-lucide="music" class="md-kit-icon" style="color: var(--color-b)"></i>
+        <span class="md-kit-label">Bug-Finding Soundtrack</span>
+        <span class="md-kit-val">[ Your debugging playlist ]</span>
+      </div>
+      <div class="md-kit-card">
+        <i data-lucide="laptop" class="md-kit-icon" style="color: var(--color-a)"></i>
+        <span class="md-kit-label">Favorite Testing Tool</span>
+        <span class="md-kit-val">[ Selenium? Cypress? Bare hands? ]</span>
+      </div>
+      <div class="md-kit-card">
+        <i data-lucide="shield-check" class="md-kit-icon" style="color: var(--color-c)"></i>
+        <span class="md-kit-label">Secret Weapon</span>
+        <span class="md-kit-val">[ Your testing superpower ]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WOULD YOU RATHER -->
+  <section class="md-wyr">
+    <div class="md-sec-header">
+      <i data-lucide="circle-help" class="md-sec-icon" style="color: var(--color-a)"></i>
+      <h2 class="md-sec-title">WOULD YOU RATHER: QA EDITION</h2>
+    </div>
+    <div class="md-wyr-grid">
+      <div class="md-wyr-row">
+        <div class="md-wyr-option md-wyr-filled" style="background: var(--color-b)">
+          <span class="md-wyr-text" style="color: var(--bg-dark)">Test only on IE6 forever</span>
+        </div>
+        <div class="md-wyr-vs" style="color: var(--color-b)">VS</div>
+        <div class="md-wyr-option md-wyr-outline">
+          <span class="md-wyr-text">Write test cases in Comic Sans</span>
+        </div>
+      </div>
+      <div class="md-wyr-row">
+        <div class="md-wyr-option md-wyr-outline">
+          <span class="md-wyr-text">Every bug you find creates 2 more</span>
+        </div>
+        <div class="md-wyr-vs" style="color: var(--color-a)">VS</div>
+        <div class="md-wyr-option md-wyr-filled" style="background: var(--color-a)">
+          <span class="md-wyr-text" style="color: var(--bg-dark)">Devs can close your bugs without fixing</span>
+        </div>
+      </div>
+      <div class="md-wyr-row">
+        <div class="md-wyr-option md-wyr-filled" style="background: var(--color-c)">
+          <span class="md-wyr-text">No coffee for a whole sprint</span>
+        </div>
+        <div class="md-wyr-vs" style="color: var(--color-c)">VS</div>
+        <div class="md-wyr-option md-wyr-outline">
+          <span class="md-wyr-text">No documentation for a whole sprint</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBER FOOTER -->
+  <section class="md-footer">
+    <div class="md-footer-quote">
+      <i data-lucide="quote" class="md-fq-icon"></i>
+      <p class="md-fq-text">"My personal QA motto goes here — something inspiring, funny, or just brutally honest."</p>
+      <span class="md-fq-author">— [ Your Name ], RaIT member since 2026</span>
+    </div>
+    <div class="md-back-row">
+      <a href="index.html" class="md-back-btn">
+        <i data-lucide="arrow-left" class="md-back-icon"></i>
+        BACK TO THE SQUAD
+      </a>
+    </div>
+    <div class="md-footer-divider"></div>
+    <p class="md-footer-copy">RaIT — Czechitas DA Testing Academy 2026</p>
+  </section>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

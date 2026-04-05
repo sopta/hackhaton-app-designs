@@ -14941,7 +14941,7 @@
                   "id": "1Ednl",
                   "name": "card-veronika",
                   "width": "fill_container",
-                  "fill": "#FFFFFF12",
+                  "fill": "$--rt-bg-card-glass",
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
@@ -15009,7 +15009,7 @@
                   "id": "UtPfu",
                   "name": "card-ivana",
                   "width": "fill_container",
-                  "fill": "#FFFFFF12",
+                  "fill": "$--rt-bg-card-glass",
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
@@ -15077,7 +15077,7 @@
                   "id": "A7Feq",
                   "name": "card-sofiia",
                   "width": "fill_container",
-                  "fill": "#FFFFFF12",
+                  "fill": "$--rt-bg-card-glass",
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
@@ -15145,7 +15145,7 @@
                   "id": "qVGPG",
                   "name": "card-jana",
                   "width": "fill_container",
-                  "fill": "#FFFFFF12",
+                  "fill": "$--rt-bg-card-glass",
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
@@ -15213,7 +15213,7 @@
                   "id": "pfWpS",
                   "name": "card-katerina",
                   "width": "fill_container",
-                  "fill": "#FFFFFF12",
+                  "fill": "$--rt-bg-card-glass",
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
@@ -15327,7 +15327,7 @@
                   "type": "frame",
                   "id": "PBeHf",
                   "name": "ctaSecondary",
-                  "fill": "\\$--rt-accent-purple",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 8,
                   "stroke": {
                     "align": "inside",
@@ -15413,7 +15413,7 @@
                   "id": "U5PCI",
                   "name": "Backlog Column",
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -15437,7 +15437,7 @@
                           "cornerRadius": 4,
                           "id": "zQLGR",
                           "name": "blDot",
-                          "fill": "$--aa-accent-yellow",
+                          "fill": "$--rt-accent-purple",
                           "width": 8,
                           "height": 8
                         },
@@ -15445,7 +15445,7 @@
                           "type": "text",
                           "id": "STTN4",
                           "name": "blTitle",
-                          "fill": "$--aa-accent-yellow",
+                          "fill": "$--rt-accent-purple",
                           "content": "BACKLOG",
                           "fontFamily": "Inter",
                           "fontSize": 11,
@@ -15456,7 +15456,7 @@
                           "type": "frame",
                           "id": "HwXbs",
                           "name": "blCnt",
-                          "fill": "$--aa-accent-yellow-dim",
+                          "fill": "$--rt-accent-purple-dim",
                           "cornerRadius": 4,
                           "padding": [
                             2,
@@ -15467,7 +15467,7 @@
                               "type": "text",
                               "id": "0sd8K",
                               "name": "blCntT",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-purple",
                               "content": "3",
                               "fontFamily": "Inter",
                               "fontSize": 10,
@@ -15495,7 +15495,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -15505,7 +15505,7 @@
                           "type": "frame",
                           "id": "C6zst",
                           "name": "t1tag",
-                          "fill": "$--aa-accent-yellow-dim",
+                          "fill": "$--rt-accent-purple-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -15516,7 +15516,7 @@
                               "type": "text",
                               "id": "4gaZ4",
                               "name": "t1tagT",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-purple",
                               "content": "API",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -15529,7 +15529,7 @@
                           "type": "text",
                           "id": "k7FCX",
                           "name": "t1title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Write E2E tests for login flow",
@@ -15541,7 +15541,7 @@
                           "type": "text",
                           "id": "3lrwx",
                           "name": "t1meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "QA-1042 · 3 pts",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -15559,7 +15559,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -15569,7 +15569,7 @@
                           "type": "frame",
                           "id": "zzbUT",
                           "name": "t2tag",
-                          "fill": "$--aa-accent-yellow-dim",
+                          "fill": "$--rt-accent-purple-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -15580,7 +15580,7 @@
                               "type": "text",
                               "id": "D71Bl",
                               "name": "t2tagT",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-purple",
                               "content": "UI",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -15593,7 +15593,7 @@
                           "type": "text",
                           "id": "OcIES",
                           "name": "t2title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Validate responsive breakpoints",
@@ -15605,7 +15605,7 @@
                           "type": "text",
                           "id": "205BT",
                           "name": "t2meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "QA-1043 · 2 pts",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -15623,7 +15623,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -15633,7 +15633,7 @@
                           "type": "frame",
                           "id": "3GosJ",
                           "name": "t3tag",
-                          "fill": "$--aa-accent-yellow-dim",
+                          "fill": "$--rt-accent-purple-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -15644,7 +15644,7 @@
                               "type": "text",
                               "id": "7UzVm",
                               "name": "t3tagT",
-                              "fill": "$--aa-accent-yellow",
+                              "fill": "$--rt-accent-purple",
                               "content": "PERF",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -15657,7 +15657,7 @@
                           "type": "text",
                           "id": "fM9Qh",
                           "name": "t3title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Load test payment gateway",
@@ -15669,7 +15669,7 @@
                           "type": "text",
                           "id": "m8xcH",
                           "name": "t3meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "QA-1044 · 5 pts",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -15684,7 +15684,7 @@
                   "id": "pEleg",
                   "name": "In QA Sprint Column",
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -15708,7 +15708,7 @@
                           "cornerRadius": 4,
                           "id": "47UlX",
                           "name": "qaDot",
-                          "fill": "$--aa-accent-magenta",
+                          "fill": "$--rt-accent-neon",
                           "width": 8,
                           "height": 8
                         },
@@ -15716,7 +15716,7 @@
                           "type": "text",
                           "id": "Ik1bI",
                           "name": "qaTitle",
-                          "fill": "$--aa-accent-magenta",
+                          "fill": "$--rt-accent-neon",
                           "content": "IN QA SPRINT",
                           "fontFamily": "Inter",
                           "fontSize": 11,
@@ -15727,7 +15727,7 @@
                           "type": "frame",
                           "id": "gnZrb",
                           "name": "qaCnt",
-                          "fill": "$--aa-accent-magenta-dim",
+                          "fill": "$--rt-accent-neon-dim",
                           "cornerRadius": 4,
                           "padding": [
                             2,
@@ -15738,7 +15738,7 @@
                               "type": "text",
                               "id": "tUGs5",
                               "name": "qaCntT",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-neon",
                               "content": "3",
                               "fontFamily": "Inter",
                               "fontSize": 10,
@@ -15766,7 +15766,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -15776,7 +15776,7 @@
                           "type": "frame",
                           "id": "H85ze",
                           "name": "q1tag",
-                          "fill": "$--aa-accent-magenta-dim",
+                          "fill": "$--rt-accent-neon-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -15787,7 +15787,7 @@
                               "type": "text",
                               "id": "I05jH",
                               "name": "q1tagT",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-neon",
                               "content": "SMOKE",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -15800,7 +15800,7 @@
                           "type": "text",
                           "id": "nD4yb",
                           "name": "q1title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Regression suite — checkout",
@@ -15812,7 +15812,7 @@
                           "type": "text",
                           "id": "mjTgf",
                           "name": "q1meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "QA-1038 · 8 pts · In Progress",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -15830,7 +15830,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -15840,7 +15840,7 @@
                           "type": "frame",
                           "id": "yNCiv",
                           "name": "q2tag",
-                          "fill": "$--aa-accent-magenta-dim",
+                          "fill": "$--rt-accent-neon-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -15851,7 +15851,7 @@
                               "type": "text",
                               "id": "6a9Sm",
                               "name": "q2tagT",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-neon",
                               "content": "INTEG",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -15864,7 +15864,7 @@
                           "type": "text",
                           "id": "VHuDm",
                           "name": "q2title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Cross-browser compat matrix",
@@ -15876,7 +15876,7 @@
                           "type": "text",
                           "id": "3Fete",
                           "name": "q2meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "QA-1039 · 5 pts · Review",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -15894,7 +15894,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -15904,7 +15904,7 @@
                           "type": "frame",
                           "id": "DOxo2",
                           "name": "q3tag",
-                          "fill": "$--aa-accent-magenta-dim",
+                          "fill": "$--rt-accent-neon-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -15915,7 +15915,7 @@
                               "type": "text",
                               "id": "sqoTv",
                               "name": "q3tagT",
-                              "fill": "$--aa-accent-magenta",
+                              "fill": "$--rt-accent-neon",
                               "content": "A11Y",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -15928,7 +15928,7 @@
                           "type": "text",
                           "id": "WyUQA",
                           "name": "q3title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "WCAG audit — form inputs",
@@ -15940,7 +15940,7 @@
                           "type": "text",
                           "id": "chst3",
                           "name": "q3meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "QA-1040 · 3 pts · Blocked",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -15955,12 +15955,12 @@
                   "id": "LhqeG",
                   "name": "Defects Column",
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "#FF3B3B30"
+                    "fill": "$--rt-accent-red-dim"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -15979,7 +15979,7 @@
                           "cornerRadius": 4,
                           "id": "rTpen",
                           "name": "dfDot",
-                          "fill": "$--aa-accent-red",
+                          "fill": "$--rt-accent-red",
                           "width": 8,
                           "height": 8
                         },
@@ -15987,7 +15987,7 @@
                           "type": "text",
                           "id": "DZXj4",
                           "name": "dfTitle",
-                          "fill": "$--aa-accent-red",
+                          "fill": "$--rt-accent-red",
                           "content": "DEFECTS",
                           "fontFamily": "Inter",
                           "fontSize": 11,
@@ -15998,7 +15998,7 @@
                           "type": "frame",
                           "id": "xsxD6",
                           "name": "dfCnt",
-                          "fill": "#FF3B3B20",
+                          "fill": "$--rt-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             2,
@@ -16009,7 +16009,7 @@
                               "type": "text",
                               "id": "N2x5E",
                               "name": "dfCntT",
-                              "fill": "$--aa-accent-red",
+                              "fill": "$--rt-accent-red",
                               "content": "2",
                               "fontFamily": "Inter",
                               "fontSize": 10,
@@ -16023,7 +16023,7 @@
                       "type": "rectangle",
                       "id": "sjEea",
                       "name": "dfDiv",
-                      "fill": "#FF3B3B30",
+                      "fill": "$--rt-accent-red-dim",
                       "width": "fill_container",
                       "height": 1
                     },
@@ -16037,7 +16037,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -16047,7 +16047,7 @@
                           "type": "frame",
                           "id": "Epeuw",
                           "name": "d1tag",
-                          "fill": "#FF3B3B20",
+                          "fill": "$--rt-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -16058,7 +16058,7 @@
                               "type": "text",
                               "id": "N4c4L",
                               "name": "d1tagT",
-                              "fill": "$--aa-accent-red",
+                              "fill": "$--rt-accent-red",
                               "content": "P1",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -16071,7 +16071,7 @@
                           "type": "text",
                           "id": "VUJ48",
                           "name": "d1title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Cart total miscalculation on iOS",
@@ -16083,7 +16083,7 @@
                           "type": "text",
                           "id": "sNJCj",
                           "name": "d1meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "BUG-287 · Critical · 2d ago",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -16101,7 +16101,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -16111,7 +16111,7 @@
                           "type": "frame",
                           "id": "azHGz",
                           "name": "d2tag",
-                          "fill": "#FF3B3B20",
+                          "fill": "$--rt-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -16122,7 +16122,7 @@
                               "type": "text",
                               "id": "UhtGt",
                               "name": "d2tagT",
-                              "fill": "$--aa-accent-red",
+                              "fill": "$--rt-accent-red",
                               "content": "P2",
                               "fontFamily": "Inter",
                               "fontSize": 9,
@@ -16135,7 +16135,7 @@
                           "type": "text",
                           "id": "BN3m2",
                           "name": "d2title",
-                          "fill": "$--aa-text-primary",
+                          "fill": "$--rt-text-primary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Search results 500 on empty query",
@@ -16147,7 +16147,7 @@
                           "type": "text",
                           "id": "9pnMw",
                           "name": "d2meta",
-                          "fill": "$--aa-text-muted",
+                          "fill": "$--rt-text-muted",
                           "content": "BUG-291 · Major · 6h ago",
                           "fontFamily": "Inter",
                           "fontSize": 10,
@@ -16306,12 +16306,12 @@
                       "name": "card1",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--rt-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -16353,7 +16353,7 @@
                           "type": "text",
                           "id": "a3Po0",
                           "name": "c1d",
-                          "fill": "$--aa-text-secondary",
+                          "fill": "$--rt-text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Translation: I didn't test it anywhere else and I'm hoping you won't either.",
@@ -16369,12 +16369,12 @@
                       "name": "card2",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--rt-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -16416,7 +16416,7 @@
                           "type": "text",
                           "id": "TrH8x",
                           "name": "c2d",
-                          "fill": "$--aa-text-secondary",
+                          "fill": "$--rt-text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "What the dev calls it when the entire page looks like a Picasso painting on mobile.",
@@ -16441,12 +16441,12 @@
                       "name": "card3",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--rt-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -16488,7 +16488,7 @@
                           "type": "text",
                           "id": "jp15v",
                           "name": "c3d",
-                          "fill": "$--aa-text-secondary",
+                          "fill": "$--rt-text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Developer magic spell that makes bugs invisible — but only when they're watching.",
@@ -16504,12 +16504,12 @@
                       "name": "card4",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--rt-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -16551,7 +16551,7 @@
                           "type": "text",
                           "id": "QMIPc",
                           "name": "c4d",
-                          "fill": "$--aa-text-secondary",
+                          "fill": "$--rt-text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Famous last words. The fix that spawns 3 new bugs and a mandatory overtime pizza night.",
@@ -16576,12 +16576,12 @@
                       "name": "card5",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--rt-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -16623,7 +16623,7 @@
                           "type": "text",
                           "id": "nlUEg",
                           "name": "c5d",
-                          "fill": "$--aa-text-secondary",
+                          "fill": "$--rt-text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Narrator: They were not. The PM wrote them at 2 AM and even they can't explain them now.",
@@ -16639,12 +16639,12 @@
                       "name": "card6",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--rt-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--rt-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -16686,7 +16686,7 @@
                           "type": "text",
                           "id": "Vo7Fk",
                           "name": "c6d",
-                          "fill": "$--aa-text-secondary",
+                          "fill": "$--rt-text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "What devs call the scenario 80% of real users encounter. We call it 'Tuesday'.",
@@ -17641,7 +17641,7 @@
               "type": "text",
               "id": "dQuKP",
               "name": "btTitle",
-              "fill": "$--text-primary",
+              "fill": "$--rt-text-primary",
               "content": "RARE BUG TYPES DISCOVERED",
               "fontFamily": "Bangers",
               "fontSize": 36,
@@ -17670,12 +17670,12 @@
                   "id": "HGn5C",
                   "name": "b1",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -17751,12 +17751,12 @@
                   "id": "qauAb",
                   "name": "b2",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -17832,12 +17832,12 @@
                   "id": "RcX0Y",
                   "name": "b3",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -17913,12 +17913,12 @@
                   "id": "5TujZ",
                   "name": "b4",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -18012,12 +18012,12 @@
               "id": "qCKV2",
               "name": "funQuote",
               "width": 800,
-              "fill": "$--aa-bg-card-glass",
+              "fill": "$--rt-bg-card-glass",
               "cornerRadius": 16,
               "stroke": {
                 "align": "inside",
                 "thickness": 1,
-                "fill": "$--aa-glass-stroke"
+                "fill": "$--rt-glass-stroke"
               },
               "layout": "vertical",
               "gap": 16,
@@ -18042,7 +18042,7 @@
                   "type": "text",
                   "id": "UytAS",
                   "name": "quoteText",
-                  "fill": "$--text-primary",
+                  "fill": "$--rt-text-primary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "'It worked on my machine' is not a valid test result.",
@@ -18078,7 +18078,7 @@
                   "name": "stat1",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -18123,7 +18123,7 @@
                   "name": "stat2",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -18168,7 +18168,7 @@
                   "name": "stat3",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -18213,7 +18213,7 @@
                   "name": "stat4",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -18317,7 +18317,7 @@
               "type": "frame",
               "id": "U3XPU",
               "name": "backBtn",
-              "fill": "\\$--rt-glass-stroke",
+              "fill": "$--rt-glass-stroke",
               "cornerRadius": 8,
               "stroke": {
                 "align": "inside",
@@ -18782,12 +18782,12 @@
                   "name": "conf1",
                   "width": "fill_container",
                   "height": 160,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -18827,12 +18827,12 @@
                   "name": "conf2",
                   "width": "fill_container",
                   "height": 160,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -18872,12 +18872,12 @@
                   "name": "conf3",
                   "width": "fill_container",
                   "height": 160,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -18980,12 +18980,12 @@
                   "name": "kit1",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -19035,12 +19035,12 @@
                   "name": "kit2",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -19090,12 +19090,12 @@
                   "name": "kit3",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -19145,12 +19145,12 @@
                   "name": "kit4",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--rt-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -19254,7 +19254,7 @@
                   "name": "wyr1",
                   "clip": true,
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "children": [
                     {
@@ -19349,7 +19349,7 @@
                   "name": "wyr2",
                   "clip": true,
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "children": [
                     {
@@ -19444,7 +19444,7 @@
                   "name": "wyr3",
                   "clip": true,
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--rt-bg-card-glass",
                   "cornerRadius": 12,
                   "children": [
                     {
@@ -30549,6 +30549,17 @@
           "value": "#C4960F30",
           "theme": {
             "Qaffeine": "Default"
+          }
+        }
+      ]
+    },
+    "--rt-accent-red-dim": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FF3B3B30",
+          "theme": {
+            "RaIT": "Default"
           }
         }
       ]

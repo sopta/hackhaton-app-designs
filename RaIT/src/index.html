@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaIT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Sora:wght@400;600;700&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/hero-bg.png" alt="RaIT" class="hero-img">
+    <div class="hero-gradient"></div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section">
+    <span class="team-label">MEET THE TEAM</span>
+    <h2 class="team-subtitle">Specialists on your bugs</h2>
+    <div class="team-cards">
+      <a href="member-detail.html" class="team-card">
+        <i data-lucide="footprints" class="team-icon"></i>
+        <span class="team-name">Veronika</span>
+        <span class="team-role">RUNNER</span>
+        <span class="team-desc">Runner, cat mom, seeker of peace</span>
+      </a>
+      <div class="team-card">
+        <i data-lucide="globe" class="team-icon"></i>
+        <span class="team-name">Ivana</span>
+        <span class="team-role">LINGUIST</span>
+        <span class="team-desc">Linguistics, teacher, world traveler</span>
+      </div>
+      <div class="team-card">
+        <i data-lucide="cpu" class="team-icon"></i>
+        <span class="team-name">Sofiia</span>
+        <span class="team-role">TECH GEEK</span>
+        <span class="team-desc">Tech enthusiast, PopMart collector</span>
+      </div>
+      <div class="team-card">
+        <i data-lucide="microscope" class="team-icon"></i>
+        <span class="team-name">Jana</span>
+        <span class="team-role">SCIENTIST</span>
+        <span class="team-desc">Scientist, instrumental music lover</span>
+      </div>
+      <div class="team-card">
+        <i data-lucide="palette" class="team-icon"></i>
+        <span class="team-name">Kateřina</span>
+        <span class="team-role">ARTIST</span>
+        <span class="team-desc">Creative soul, tattoo artist</span>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a href="bug-hunt.html" class="btn-primary">
+        <i data-lucide="scan" class="btn-icon"></i>
+        <span>HUNT CYBER BUGS</span>
+      </a>
+      <a href="#" class="btn-secondary">
+        <i data-lucide="radar" class="btn-icon"></i>
+        <span>VIEW OUR WORK</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SPRINT BOARD SECTION -->
+  <section class="sprint-section">
+    <h2 class="sprint-title">SPRINT BOARD</h2>
+    <div class="sprint-title-accent"></div>
+    <div class="sprint-columns">
+      <!-- Backlog Column -->
+      <div class="sprint-column col-backlog">
+        <div class="col-header">
+          <span class="col-dot dot-a"></span>
+          <span class="col-title col-title-a">BACKLOG</span>
+          <span class="col-count count-a">3</span>
+        </div>
+        <div class="col-divider divider-a"></div>
+        <div class="task-card">
+          <span class="task-tag tag-backlog">API</span>
+          <span class="task-title">Write E2E tests for login flow</span>
+          <span class="task-meta">QA-1042 · 3 pts</span>
+        </div>
+        <div class="task-card">
+          <span class="task-tag tag-backlog">UI</span>
+          <span class="task-title">Validate responsive breakpoints</span>
+          <span class="task-meta">QA-1043 · 2 pts</span>
+        </div>
+        <div class="task-card">
+          <span class="task-tag tag-backlog">PERF</span>
+          <span class="task-title">Load test payment gateway</span>
+          <span class="task-meta">QA-1044 · 5 pts</span>
+        </div>
+      </div>
+      <!-- In QA Sprint Column -->
+      <div class="sprint-column col-qa">
+        <div class="col-header">
+          <span class="col-dot dot-b"></span>
+          <span class="col-title col-title-b">IN QA SPRINT</span>
+          <span class="col-count count-b">3</span>
+        </div>
+        <div class="col-divider divider-b"></div>
+        <div class="task-card">
+          <span class="task-tag tag-qa">SMOKE</span>
+          <span class="task-title">Regression suite — checkout</span>
+          <span class="task-meta">QA-1038 · 8 pts · In Progress</span>
+        </div>
+        <div class="task-card">
+          <span class="task-tag tag-qa">INTEG</span>
+          <span class="task-title">Cross-browser compat matrix</span>
+          <span class="task-meta">QA-1039 · 5 pts · Review</span>
+        </div>
+        <div class="task-card">
+          <span class="task-tag tag-qa">A11Y</span>
+          <span class="task-title">WCAG audit — form inputs</span>
+          <span class="task-meta">QA-1040 · 3 pts · Blocked</span>
+        </div>
+      </div>
+      <!-- Defects Column -->
+      <div class="sprint-column col-defects">
+        <div class="col-header">
+          <span class="col-dot dot-c"></span>
+          <span class="col-title col-title-c">DEFECTS</span>
+          <span class="col-count count-c">2</span>
+        </div>
+        <div class="col-divider divider-c"></div>
+        <div class="task-card">
+          <span class="task-tag tag-defects">P1</span>
+          <span class="task-title">Cart total miscalculation on iOS</span>
+          <span class="task-meta">BUG-287 · Critical · 2d ago</span>
+        </div>
+        <div class="task-card">
+          <span class="task-tag tag-defects">P2</span>
+          <span class="task-title">Search results 500 on empty query</span>
+          <span class="task-meta">BUG-291 · Major · 6h ago</span>
+        </div>
+      </div>
+    </div>
+    <div class="sprint-badge-row">
+      <span class="heart-badge">I ❤ BUG HUNTING</span>
+    </div>
+  </section>
+
+  <!-- FUN QA DICTIONARY SECTION -->
+  <section class="dictionary-section">
+    <div class="dict-header">
+      <span class="dict-badge">
+        <i data-lucide="heart" class="badge-icon"></i>
+        GIRLS IN QA EDITION
+      </span>
+      <h2 class="dict-title">THE RaIT DICTIONARY</h2>
+      <p class="dict-subtitle">Essential terms redefined by women who actually test the code</p>
+    </div>
+    <div class="dict-grid">
+      <div class="dict-row">
+        <div class="dict-card">
+          <div class="dict-term">
+            <i data-lucide="coffee" class="dict-icon icon-b"></i>
+            <span class="dict-word word-b">"It works on my machine"</span>
+          </div>
+          <p class="dict-def">Translation: I didn't test it anywhere else and I'm hoping you won't either.</p>
+        </div>
+        <div class="dict-card">
+          <div class="dict-term">
+            <i data-lucide="shield" class="dict-icon icon-a"></i>
+            <span class="dict-word word-a">"Minor UI issue"</span>
+          </div>
+          <p class="dict-def">What the dev calls it when the entire page looks like a Picasso painting on mobile.</p>
+        </div>
+      </div>
+      <div class="dict-row">
+        <div class="dict-card">
+          <div class="dict-term">
+            <i data-lucide="bug" class="dict-icon icon-c"></i>
+            <span class="dict-word word-c">"Can't reproduce"</span>
+          </div>
+          <p class="dict-def">Developer magic spell that makes bugs invisible — but only when they're watching.</p>
+        </div>
+        <div class="dict-card">
+          <div class="dict-term">
+            <i data-lucide="timer" class="dict-icon icon-d"></i>
+            <span class="dict-word word-d">"Quick fix before release"</span>
+          </div>
+          <p class="dict-def">Famous last words. The fix that spawns 3 new bugs and a mandatory overtime pizza night.
+          </p>
+        </div>
+      </div>
+      <div class="dict-row">
+        <div class="dict-card">
+          <div class="dict-term">
+            <i data-lucide="message-circle" class="dict-icon icon-b"></i>
+            <span class="dict-word word-b">"The requirements were clear"</span>
+          </div>
+          <p class="dict-def">Narrator: They were not. The PM wrote them at 2 AM and even they can't explain them now.
+          </p>
+        </div>
+        <div class="dict-card">
+          <div class="dict-term">
+            <i data-lucide="sparkles" class="dict-icon icon-a"></i>
+            <span class="dict-word word-a">"Edge case"</span>
+          </div>
+          <p class="dict-def">What devs call the scenario 80% of real users encounter. We call it 'Tuesday'.</p>
+        </div>
+      </div>
+    </div>
+    <div class="quote-bar">
+      <i data-lucide="quote" class="quote-icon"></i>
+      <p class="quote-text">"Behind every successful software release, there's a QA woman who found 47 bugs the devs
+        said didn't exist."</p>
+      <span class="quote-author">— Ancient QA proverb, circa last Tuesday's standup</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i data-lucide="scan" class="footer-zap"></i>
+        <span class="footer-logo-text">RaIT</span>
+        <i data-lucide="scan" class="footer-zap"></i>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">ABOUT</a>
+        <a href="#">TEAM</a>
+        <a href="#">SPRINTS</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </div>
+    <p class="copyright">&copy; 2026 RaIT — Czechitas DA Testing Academy. All bugs will be found.</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+
+</html>
