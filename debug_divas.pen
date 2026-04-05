@@ -20188,7 +20188,7 @@
                   "type": "frame",
                   "id": "WIGt2",
                   "name": "ctaSecondary",
-                  "fill": "\\$--sv-accent-blue",
+                  "fill": "$--sv-bg-card-glass",
                   "cornerRadius": 8,
                   "stroke": {
                     "align": "inside",
@@ -20356,7 +20356,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20420,7 +20420,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20484,7 +20484,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20627,7 +20627,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20691,7 +20691,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20755,7 +20755,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20821,7 +20821,7 @@
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "#FF000030"
+                    "fill": "$--sv-accent-red-dim"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -20859,7 +20859,7 @@
                           "type": "frame",
                           "id": "65N9x",
                           "name": "dfCnt",
-                          "fill": "#FF000020",
+                          "fill": "$--sv-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             2,
@@ -20884,7 +20884,7 @@
                       "type": "rectangle",
                       "id": "U468W",
                       "name": "dfDiv",
-                      "fill": "#FF000030",
+                      "fill": "$--sv-accent-red-dim",
                       "width": "fill_container",
                       "height": 1
                     },
@@ -20898,7 +20898,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20908,7 +20908,7 @@
                           "type": "frame",
                           "id": "JMFCO",
                           "name": "d1tag",
-                          "fill": "#FF000020",
+                          "fill": "$--sv-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -20962,7 +20962,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--sv-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -20972,7 +20972,7 @@
                           "type": "frame",
                           "id": "LhhgY",
                           "name": "d2tag",
-                          "fill": "#FF000020",
+                          "fill": "$--sv-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             3,
@@ -22180,7 +22180,7 @@
                       "fill": "$--sv-text-primary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Jana H.",
+                      "content": "Jana",
                       "fontFamily": "Montserrat",
                       "fontSize": 14,
                       "fontWeight": "600"
@@ -22449,7 +22449,7 @@
                       "fill": "$--sv-text-primary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Hana P.",
+                      "content": "Hana L.",
                       "fontFamily": "Montserrat",
                       "fontSize": 14,
                       "fontWeight": "600"
@@ -22677,7 +22677,7 @@
                           "type": "text",
                           "id": "g4pXJ",
                           "name": "b2rarityT",
-                          "fill": "$--aa-bg-dark",
+                          "fill": "#FFFFFF",
                           "content": "MYTHICAL",
                           "fontFamily": "Montserrat",
                           "fontSize": 9,
@@ -22839,7 +22839,7 @@
                           "type": "text",
                           "id": "im0PM",
                           "name": "b4rarityT",
-                          "fill": "$--aa-bg-dark",
+                          "fill": "#FFFFFF",
                           "content": "COMMON",
                           "fontFamily": "Montserrat",
                           "fontSize": 9,
@@ -23178,7 +23178,7 @@
               "type": "frame",
               "id": "fw7A3",
               "name": "backBtn",
-              "fill": "\\$--sv-accent-blue",
+              "fill": "$--sv-glass-stroke",
               "cornerRadius": 8,
               "stroke": {
                 "align": "inside",
@@ -30560,6 +30560,17 @@
           "value": "#FF3B3B30",
           "theme": {
             "RaIT": "Default"
+          }
+        }
+      ]
+    },
+    "--sv-accent-red-dim": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#B5412A30",
+          "theme": {
+            "Suverezity": "Default"
           }
         }
       ]
