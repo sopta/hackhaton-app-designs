@@ -25006,7 +25006,7 @@
                   "type": "frame",
                   "id": "HgWLk",
                   "name": "ctaSecondary",
-                  "fill": "\\$--bh-accent-cyan",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 8,
                   "stroke": {
                     "align": "inside",
@@ -25174,7 +25174,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25238,7 +25238,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25302,7 +25302,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25445,7 +25445,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25509,7 +25509,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25573,7 +25573,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25634,12 +25634,12 @@
                   "id": "asSJJ",
                   "name": "Defects Column",
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "#FF3B3B30"
+                    "fill": "$--bh-accent-red-dim"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -25677,7 +25677,7 @@
                           "type": "frame",
                           "id": "YBpmp",
                           "name": "dfCnt",
-                          "fill": "#FF3B3B20",
+                          "fill": "$--bh-accent-red-dim",
                           "cornerRadius": 4,
                           "padding": [
                             2,
@@ -25702,7 +25702,7 @@
                       "type": "rectangle",
                       "id": "21zxT",
                       "name": "dfDiv",
-                      "fill": "#FF3B3B30",
+                      "fill": "$--bh-accent-red-dim",
                       "width": "fill_container",
                       "height": 1
                     },
@@ -25716,7 +25716,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25780,7 +25780,7 @@
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 8,
@@ -25985,12 +25985,12 @@
                       "name": "card1",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--bh-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -26048,12 +26048,12 @@
                       "name": "card2",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--bh-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -26120,12 +26120,12 @@
                       "name": "card3",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--bh-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -26183,12 +26183,12 @@
                       "name": "card4",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--bh-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -26255,12 +26255,12 @@
                       "name": "card5",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--bh-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -26318,12 +26318,12 @@
                       "name": "card6",
                       "width": "fill_container",
                       "height": 120,
-                      "fill": "$--aa-bg-card-glass",
+                      "fill": "$--bh-bg-card-glass",
                       "cornerRadius": 12,
                       "stroke": {
                         "align": "inside",
                         "thickness": 1,
-                        "fill": "$--aa-glass-stroke"
+                        "fill": "$--bh-glass-stroke"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -27258,7 +27258,7 @@
               "type": "text",
               "id": "5ChIm",
               "name": "btTitle",
-              "fill": "$--text-primary",
+              "fill": "$--bh-text-primary",
               "content": "RARE BUG TYPES DISCOVERED",
               "fontFamily": "Bangers",
               "fontSize": 36,
@@ -27287,12 +27287,12 @@
                   "id": "wVKck",
                   "name": "b1",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -27368,12 +27368,12 @@
                   "id": "8GdzX",
                   "name": "b2",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -27449,12 +27449,12 @@
                   "id": "6kONk",
                   "name": "b3",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -27530,12 +27530,12 @@
                   "id": "sgGjn",
                   "name": "b4",
                   "width": 220,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -27659,7 +27659,7 @@
                   "type": "text",
                   "id": "ppSn0",
                   "name": "quoteText",
-                  "fill": "$--text-primary",
+                  "fill": "$--bh-text-primary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "'Fuck my life' is not a valid thought.",
@@ -27695,7 +27695,7 @@
                   "name": "stat1",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -27740,7 +27740,7 @@
                   "name": "stat2",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -27785,7 +27785,7 @@
                   "name": "stat3",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -27830,7 +27830,7 @@
                   "name": "stat4",
                   "width": 180,
                   "height": 120,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
@@ -27934,7 +27934,7 @@
               "type": "frame",
               "id": "Q2oCB",
               "name": "backBtn",
-              "fill": "\\$--bh-accent-cyan",
+              "fill": "$--bh-glass-stroke",
               "cornerRadius": 8,
               "stroke": {
                 "align": "inside",
@@ -28399,12 +28399,12 @@
                   "name": "conf1",
                   "width": "fill_container",
                   "height": 160,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -28444,12 +28444,12 @@
                   "name": "conf2",
                   "width": "fill_container",
                   "height": 160,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -28489,12 +28489,12 @@
                   "name": "conf3",
                   "width": "fill_container",
                   "height": 160,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -28597,12 +28597,12 @@
                   "name": "kit1",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -28652,12 +28652,12 @@
                   "name": "kit2",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -28707,12 +28707,12 @@
                   "name": "kit3",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -28762,12 +28762,12 @@
                   "name": "kit4",
                   "width": "fill_container",
                   "height": 180,
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1,
-                    "fill": "$--aa-glass-stroke"
+                    "fill": "$--bh-glass-stroke"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -28871,7 +28871,7 @@
                   "name": "wyr1",
                   "clip": true,
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "children": [
                     {
@@ -28966,7 +28966,7 @@
                   "name": "wyr2",
                   "clip": true,
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "children": [
                     {
@@ -29061,7 +29061,7 @@
                   "name": "wyr3",
                   "clip": true,
                   "width": "fill_container",
-                  "fill": "$--aa-bg-card-glass",
+                  "fill": "$--bh-bg-card-glass",
                   "cornerRadius": 12,
                   "children": [
                     {
@@ -30571,6 +30571,17 @@
           "value": "#B5412A30",
           "theme": {
             "Suverezity": "Default"
+          }
+        }
+      ]
+    },
+    "--bh-accent-red-dim": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FF3B3B30",
+          "theme": {
+            "BootcampHeroes": "Default"
           }
         }
       ]
